@@ -1,5 +1,53 @@
 import React from 'react'
 
+
+let serviceslist = [
+  {
+    title:"Indoor Cladding",
+    description:"Enhance your interior spaces with the natural warmth and sophisticated texture of custom timber wall treatments. We specialize in feature walls that breathe life into living areas and office spaces.",
+    image:"https://lh3.googleusercontent.com/aida-public/AB6AXuBPWIS1EfstEUGm56GVJ78PSNxgvFfVjvGrvphnFLCj1fsjCinXFGsjY3KaRz9sfnTAgolA4bITZf5q66OSLDnozpr-K3Ybr032slz4kOG6Y-Bf9FRcTiBDYnJNqfZwRPUrmhijECg2njzKfbMO7btEEDZaIZ94V8uoD9avQD5SANdNe4i6xDAfizgl2SKBr3zm213n7AN7AGTr90w67xrHs8wCXtotYgThurs_CprqW4785o2TSnS6n_i5N6RWqJrjFiaXe_Nun28",
+    specs:[
+     " Sustainable Hardwood Selection",
+     " Seamless Precision Installation"
+     ]
+  },
+  {
+    title:"Outdoor Cladding",
+    description:"Protect and beautify your home with durable, weather-resistant cladding solutions designed for architectural impact. Our treatments are built to withstand the elements while maintaining their aesthetic brilliance.",
+    image:"https://lh3.googleusercontent.com/aida-public/AB6AXuC6L1Hyd5i0-pjwwUxds1NrxgseAD4nMFZ3cO7amIiceN6q5HujfxT6pKQg5k5iwvP1djgvf2ji09maKqaQdn-9HBBvrwkdyZtdEqCR6D-XRZGqfwiJ8UPXd_qRZha1GC_ilfQAc2VM2K_rHvweefCLvXcloJbLCIXo7qRP-GPJRgWIAiTpdW-LO-cVgDcTdEQF9kTtuAQCpspW2so3iVYNvSEhWGp_s6BosqUWuvHYZANw8Hc8Z0TL9ltfSDFsTCUKZEvFVw7J3Rk",
+    specs:[
+      "Weather-Proof Finishes",
+      "Modern Shiplap &amp; Tongue-and-Groove"
+     ]
+  },
+  {
+    title:"Composite Decking",
+    description:"Revolutionize your outdoor living with high-performance composite decking. Combining the beauty of real wood with ultra-low maintenance, it’s the perfect foundation for your backyard retreat.",
+    image:"https://lh3.googleusercontent.com/aida-public/AB6AXuC9VRSGoDNOzJ_ut69LkHEtAZyGIRVPc72vMQ3Ih-hWhh91iqw-uJ62993Gm1POWpaPIXswY_7_EemNMblQwn9KaotbC_w06Dl8oLBT4Gq_UytDcVxhta5HIaJMJlyiCSGwXFMGoizlfUM-HBs26KWXEcJgbqGUzaCnn7AhXT1EFPO58-5c376MMxLVCXPo3AAkCdf0LQof_sCurPrVLJEgy_0lNsI5Mw8Cu644HFwSwfvK7DsARVwBNhg2sOvzEMxEuNdC5sCHaZI",
+    specs:[
+      "Rot &amp; Fade Resistant",
+      "Hidden Fastener Systems"
+     ]
+  },
+  {
+    title:"Cabinet Making",
+    description:"Bespoke cabinetry that blends functionality with artisan quality. From minimalist kitchen units to grand library shelves, our master carpenters bring precision to every joint.",
+    image:"https://lh3.googleusercontent.com/aida-public/AB6AXuBmR1HBnzsicSDsEauOBBX667a0WK0sfmGGlAJCoFG6tlWOteP3k-u2vs8qHHruwDY_wbeTczoJnOhW5VLQn8Wp_nYYCAhNhysdlUhtC26Kf1OoUNXggYcaFyAu2qy0hQcplusS9Ac-fIaQIAOsT6Hzz8zVJZgSNNhLVBzNZ6Y2RRvYvx3NfYdLcAQkwhTDhn6YPY8LFnR110Vj5nIiepwT51R0YXC4SX4WNrO5-L5_JEqI3fwq7Yj7xZycvYCOrRhu4euFKEfzbrk",
+    specs:[ 
+      "Tailored Storage Solutions",
+      "Premium Hardware &amp; Soft-Close"
+    ]
+  },
+  {
+    title:" Pergola Installation",
+    description:" Create a stunning focal point for your garden. Our custom-designed pergolas offer the perfect balance of shade and architectural elegance, extending your living space outdoors.",
+    image:"https://lh3.googleusercontent.com/aida-public/AB6AXuBsVC8UlHibfXZ-6TzNWvbL360a53AMG-0Tx_zMDfAG3oH0bEG6E6hCWmgYdOHT8TbnUeA8bWL2GEtCTu5ml_WGLlVWfQkgrXqXWhw0nr7VSTZsut2JXOPtIZF63YCi_YplVpPr_nnCY5G7rHmPw8NgIrqfWLiDBWWo1LFt6w5-dlObKaPkB-vDIVhXZmHveJqd6aCXyFTN9vpsliSsKMYgooPw87jXwPWT_MeMHCmpQtKaPm8Z1h7fDchBk0VWjNy3EzbM2g-0Wvs",
+    specs:[ 
+      "Bespoke Timber Frame Design",
+      " Structural Integrity Guaranteed"
+    ]
+  }
+]
 function Services() {
   return (
     <>
@@ -60,301 +108,62 @@ function Services() {
       </div>
       {/* <!-- Services Cards - Alternating Layout --> */}
       <main className="px-4 md:px-10 lg:px-40 flex flex-col gap-20 py-20">
-        {/* <!-- Service 1: Indoor Cladding (Text Left) --> */}
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-          <div className="flex-1 flex flex-col gap-6 order-2 lg:order-1">
-            <div className="flex flex-col gap-3">
-              <h3
-                className="text-[#161413] dark:text-white text-2xl md:text-3xl font-serif"
-              >
-                Indoor Cladding
-              </h3>
-              <p
-                className="text-[#7c746e] dark:text-gray-400 text-base md:text-lg leading-relaxed"
-              >
-                Enhance your interior spaces with the natural warmth and
-                sophisticated texture of custom timber wall treatments. We
-                specialize in feature walls that breathe life into living areas
-                and office spaces.
-              </p>
-            </div>
-            <ul className="flex flex-col gap-2">
-              <li
-                className="flex items-center gap-2 text-sm text-[#161413] dark:text-gray-300"
-              >
-                <span className="material-symbols-outlined text-primary text-lg"
-                  >check_circle</span
-                >
-                Sustainable Hardwood Selection
-              </li>
-              <li
-                className="flex items-center gap-2 text-sm text-[#161413] dark:text-gray-300"
-              >
-                <span className="material-symbols-outlined text-primary text-lg"
-                  >check_circle</span
-                >
-                Seamless Precision Installation
-              </li>
-            </ul>
-            <button
-              className="flex items-center justify-center gap-2 rounded-lg h-10 px-6 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold w-fit hover:bg-primary hover:text-white transition-all"
-            >
-              <span>Learn More</span>
-              <span className="material-symbols-outlined text-sm"
-                >arrow_forward</span
-              >
-            </button>
-          </div>
-          <div className="flex-1 w-full order-1 lg:order-2">
+        {serviceslist.map((service, index) => (
+          <div key={index} className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+            {/* Text Content */}
             <div
-              className="aspect-[16/10] bg-center bg-cover rounded-xl shadow-xl overflow-hidden group"
-              data-alt="Modern interior living room with vertical timber slat cladding wall"
-              style={{
-                backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPWIS1EfstEUGm56GVJ78PSNxgvFfVjvGrvphnFLCj1fsjCinXFGsjY3KaRz9sfnTAgolA4bITZf5q66OSLDnozpr-K3Ybr032slz4kOG6Y-Bf9FRcTiBDYnJNqfZwRPUrmhijECg2njzKfbMO7btEEDZaIZ94V8uoD9avQD5SANdNe4i6xDAfizgl2SKBr3zm213n7AN7AGTr90w67xrHs8wCXtotYgThurs_CprqW4785o2TSnS6n_i5N6RWqJrjFiaXe_Nun28')`
-              }}
+              className={`flex-1 flex flex-col gap-6 ${
+                index % 2 === 0 ? "order-2 lg:order-1" : "order-1 lg:order-2"
+              }`}
+            >
+              <div className="flex flex-col gap-3">
+                <h3 className="text-[#161413] dark:text-white text-2xl md:text-3xl font-serif">
+                  {service.title}
+                </h3>
+                <p className="text-[#7c746e] dark:text-gray-400 text-base md:text-lg leading-relaxed">
+                  {service.description}
+                </p>
+              </div>
+              <ul className="flex flex-col gap-2">
+                {service.specs.map((spec, specIndex) => (
+                  <li
+                    key={specIndex}
+                    className="flex items-center gap-2 text-sm text-[#161413] dark:text-gray-300"
+                  >
+                    <span className="material-symbols-outlined text-primary text-lg">
+                      check_circle
+                    </span>
+                    {spec}
+                  </li>
+                ))}
+              </ul>
+              <button className="flex items-center justify-center gap-2 rounded-lg h-10 px-6 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold w-fit hover:bg-primary hover:text-white transition-all">
+                <span>Learn More</span>
+                <span className="material-symbols-outlined text-sm">
+                  arrow_forward
+                </span>
+              </button>
+            </div>
+            {/* Image */}
+            <div
+              className={`flex-1 w-full ${
+                index % 2 === 0 ? "order-1 lg:order-2" : "order-2 lg:order-1"
+              }`}
             >
               <div
-                className="w-full h-full bg-black/0 group-hover:bg-black/10 transition-all duration-500"
-              ></div>
+                className="aspect-[16/10] bg-center bg-cover rounded-xl shadow-xl overflow-hidden group"
+                style={{
+                  backgroundImage: `url('${service.image}')`
+                }}
+              >
+                <div className="w-full h-full bg-black/0 group-hover:bg-black/10 transition-all duration-500"></div>
+              </div>
             </div>
           </div>
-        </div>
-        {/* <!-- Service 2: Outdoor Cladding (Text Right) --> */}
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-          <div className="flex-1 w-full">
-            <div
-              className="aspect-[16/10] bg-center bg-cover rounded-xl shadow-xl overflow-hidden group"
-              data-alt="Architectural exterior of a house with premium cedar wood cladding"
-              style={{
-                backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuC6L1Hyd5i0-pjwwUxds1NrxgseAD4nMFZ3cO7amIiceN6q5HujfxT6pKQg5k5iwvP1djgvf2ji09maKqaQdn-9HBBvrwkdyZtdEqCR6D-XRZGqfwiJ8UPXd_qRZha1GC_ilfQAc2VM2K_rHvweefCLvXcloJbLCIXo7qRP-GPJRgWIAiTpdW-LO-cVgDcTdEQF9kTtuAQCpspW2so3iVYNvSEhWGp_s6BosqUWuvHYZANw8Hc8Z0TL9ltfSDFsTCUKZEvFVw7J3Rk')`
-              }}
-            >
-              <div
-                className="w-full h-full bg-black/0 group-hover:bg-black/10 transition-all duration-500"
-              ></div>
-            </div>
-          </div>
-          <div className="flex-1 flex flex-col gap-6">
-            <div className="flex flex-col gap-3">
-              <h3
-                className="text-[#161413] dark:text-white text-2xl md:text-3xl font-serif"
-              >
-                Outdoor Cladding
-              </h3>
-              <p
-                className="text-[#7c746e] dark:text-gray-400 text-base md:text-lg leading-relaxed"
-              >
-                Protect and beautify your home with durable, weather-resistant
-                cladding solutions designed for architectural impact. Our
-                treatments are built to withstand the elements while maintaining
-                their aesthetic brilliance.
-              </p>
-            </div>
-            <ul className="flex flex-col gap-2">
-              <li
-                className="flex items-center gap-2 text-sm text-[#161413] dark:text-gray-300"
-              >
-                <span className="material-symbols-outlined text-primary text-lg"
-                  >check_circle</span
-                >
-                Weather-Proof Finishes
-              </li>
-              <li
-                className="flex items-center gap-2 text-sm text-[#161413] dark:text-gray-300"
-              >
-                <span className="material-symbols-outlined text-primary text-lg"
-                  >check_circle</span
-                >
-                Modern Shiplap &amp; Tongue-and-Groove
-              </li>
-            </ul>
-            <button
-              className="flex items-center justify-center gap-2 rounded-lg h-10 px-6 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold w-fit hover:bg-primary hover:text-white transition-all"
-            >
-              <span>Learn More</span>
-              <span className="material-symbols-outlined text-sm"
-                >arrow_forward</span
-              >
-            </button>
-          </div>
-        </div>
-        {/* <!-- Service 3: Composite Decking (Text Left) --> */}
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-          <div className="flex-1 flex flex-col gap-6 order-2 lg:order-1">
-            <div className="flex flex-col gap-3">
-              <h3
-                className="text-[#161413] dark:text-white text-2xl md:text-3xl font-serif"
-              >
-                Composite Decking
-              </h3>
-              <p
-                className="text-[#7c746e] dark:text-gray-400 text-base md:text-lg leading-relaxed"
-              >
-                Revolutionize your outdoor living with high-performance
-                composite decking. Combining the beauty of real wood with
-                ultra-low maintenance, it’s the perfect foundation for your
-                backyard retreat.
-              </p>
-            </div>
-            <ul className="flex flex-col gap-2">
-              <li
-                className="flex items-center gap-2 text-sm text-[#161413] dark:text-gray-300"
-              >
-                <span className="material-symbols-outlined text-primary text-lg"
-                  >check_circle</span
-                >
-                Rot &amp; Fade Resistant
-              </li>
-              <li
-                className="flex items-center gap-2 text-sm text-[#161413] dark:text-gray-300"
-              >
-                <span className="material-symbols-outlined text-primary text-lg"
-                  >check_circle</span
-                >
-                Hidden Fastener Systems
-              </li>
-            </ul>
-            <button
-              className="flex items-center justify-center gap-2 rounded-lg h-10 px-6 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold w-fit hover:bg-primary hover:text-white transition-all"
-            >
-              <span>Learn More</span>
-              <span className="material-symbols-outlined text-sm"
-                >arrow_forward</span
-              >
-            </button>
-          </div>
-          <div className="flex-1 w-full order-1 lg:order-2">
-            <div
-              className="aspect-[16/10] bg-center bg-cover rounded-xl shadow-xl overflow-hidden group"
-              data-alt="Luxury modern composite deck overlooking a garden with outdoor furniture"
-              style={{
-                backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuC9VRSGoDNOzJ_ut69LkHEtAZyGIRVPc72vMQ3Ih-hWhh91iqw-uJ62993Gm1POWpaPIXswY_7_EemNMblQwn9KaotbC_w06Dl8oLBT4Gq_UytDcVxhta5HIaJMJlyiCSGwXFMGoizlfUM-HBs26KWXEcJgbqGUzaCnn7AhXT1EFPO58-5c376MMxLVCXPo3AAkCdf0LQof_sCurPrVLJEgy_0lNsI5Mw8Cu644HFwSwfvK7DsARVwBNhg2sOvzEMxEuNdC5sCHaZI')`
-              }}
-            >
-              <div
-                className="w-full h-full bg-black/0 group-hover:bg-black/10 transition-all duration-500"
-              ></div>
-            </div>
-          </div>
-        </div>
-        {/* <!-- Service 4: Cabinet Making (Text Right) --> */}
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-          <div className="flex-1 w-full">
-            <div
-              className="aspect-[16/10] bg-center bg-cover rounded-xl shadow-xl overflow-hidden group"
-              data-alt="High-end custom built-in wooden cabinets and shelving unit"
-              style={{
-                backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuBmR1HBnzsicSDsEauOBBX667a0WK0sfmGGlAJCoFG6tlWOteP3k-u2vs8qHHruwDY_wbeTczoJnOhW5VLQn8Wp_nYYCAhNhysdlUhtC26Kf1OoUNXggYcaFyAu2qy0hQcplusS9Ac-fIaQIAOsT6Hzz8zVJZgSNNhLVBzNZ6Y2RRvYvx3NfYdLcAQkwhTDhn6YPY8LFnR110Vj5nIiepwT51R0YXC4SX4WNrO5-L5_JEqI3fwq7Yj7xZycvYCOrRhu4euFKEfzbrk')`
-              }}
-            >
-              <div
-                className="w-full h-full bg-black/0 group-hover:bg-black/10 transition-all duration-500"
-              ></div>
-            </div>
-          </div>
-          <div className="flex-1 flex flex-col gap-6">
-            <div className="flex flex-col gap-3">
-              <h3
-                className="text-[#161413] dark:text-white text-2xl md:text-3xl font-serif"
-              >
-                Cabinet Making
-              </h3>
-              <p
-                className="text-[#7c746e] dark:text-gray-400 text-base md:text-lg leading-relaxed"
-              >
-                Bespoke cabinetry that blends functionality with artisan
-                quality. From minimalist kitchen units to grand library shelves,
-                our master carpenters bring precision to every joint.
-              </p>
-            </div>
-            <ul className="flex flex-col gap-2">
-              <li
-                className="flex items-center gap-2 text-sm text-[#161413] dark:text-gray-300"
-              >
-                <span className="material-symbols-outlined text-primary text-lg"
-                  >check_circle</span
-                >
-                Tailored Storage Solutions
-              </li>
-              <li
-                className="flex items-center gap-2 text-sm text-[#161413] dark:text-gray-300"
-              >
-                <span className="material-symbols-outlined text-primary text-lg"
-                  >check_circle</span
-                >
-                Premium Hardware &amp; Soft-Close
-              </li>
-            </ul>
-            <button
-              className="flex items-center justify-center gap-2 rounded-lg h-10 px-6 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold w-fit hover:bg-primary hover:text-white transition-all"
-            >
-              <span>Learn More</span>
-              <span className="material-symbols-outlined text-sm"
-                >arrow_forward</span
-              >
-            </button>
-          </div>
-        </div>
-        {/* <!-- Service 5: Pergola Installation (Text Left) --> */}
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-          <div className="flex-1 flex flex-col gap-6 order-2 lg:order-1">
-            <div className="flex flex-col gap-3">
-              <h3
-                className="text-[#161413] dark:text-white text-2xl md:text-3xl font-serif"
-              >
-                Pergola Installation
-              </h3>
-              <p
-                className="text-[#7c746e] dark:text-gray-400 text-base md:text-lg leading-relaxed"
-              >
-                Create a stunning focal point for your garden. Our
-                custom-designed pergolas offer the perfect balance of shade and
-                architectural elegance, extending your living space outdoors.
-              </p>
-            </div>
-            <ul className="flex flex-col gap-2">
-              <li
-                className="flex items-center gap-2 text-sm text-[#161413] dark:text-gray-300"
-              >
-                <span className="material-symbols-outlined text-primary text-lg"
-                  >check_circle</span
-                >
-                Bespoke Timber Frame Design
-              </li>
-              <li
-                className="flex items-center gap-2 text-sm text-[#161413] dark:text-gray-300"
-              >
-                <span className="material-symbols-outlined text-primary text-lg"
-                  >check_circle</span
-                >
-                Structural Integrity Guaranteed
-              </li>
-            </ul>
-            <button
-              className="flex items-center justify-center gap-2 rounded-lg h-10 px-6 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold w-fit hover:bg-primary hover:text-white transition-all"
-            >
-              <span>Learn More</span>
-              <span className="material-symbols-outlined text-sm"
-                >arrow_forward</span
-              >
-            </button>
-          </div>
-          <div className="flex-1 w-full order-1 lg:order-2">
-            <div
-              className="aspect-[16/10] bg-center bg-cover rounded-xl shadow-xl overflow-hidden group"
-              data-alt="Elegant timber pergola structure in a modern landscaped garden"
-              style={{
-                backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuBsVC8UlHibfXZ-6TzNWvbL360a53AMG-0Tx_zMDfAG3oH0bEG6E6hCWmgYdOHT8TbnUeA8bWL2GEtCTu5ml_WGLlVWfQkgrXqXWhw0nr7VSTZsut2JXOPtIZF63YCi_YplVpPr_nnCY5G7rHmPw8NgIrqfWLiDBWWo1LFt6w5-dlObKaPkB-vDIVhXZmHveJqd6aCXyFTN9vpsliSsKMYgooPw87jXwPWT_MeMHCmpQtKaPm8Z1h7fDchBk0VWjNy3EzbM2g-0Wvs')`
-              }}
-            >
-              <div
-                className="w-full h-full bg-black/0 group-hover:bg-black/10 transition-all duration-500"
-              ></div>
-            </div>
-          </div>
-        </div>
+        ))}
       </main>
       {/* <!-- CTA Section --> */}
+     
       <section className="bg-primary py-20 mt-10">
         <div
           className="px-4 md:px-10 lg:px-40 text-center flex flex-col items-center gap-8"

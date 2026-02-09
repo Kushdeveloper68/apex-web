@@ -103,40 +103,25 @@ function About() {
         <div
           className="bg-primary rounded-xl p-10 flex flex-wrap justify-around gap-8 text-white"
         >
-          <div className="text-center">
-            <div className="text-4xl font-black mb-1">15+</div>
+          {[{count:"15+",title:"Years Experience"},
+          {count:"500+",title:"Projects Completed"},
+          {count:"100%",title:"Client Satisfaction"},
+          {count:"25",title:" Master Artisans"},
+
+          ].map((item , index)=> (
+           <div className="text-center" key={index}>
+            <div className="text-4xl font-black mb-1">{item.count}</div>
             <div
               className="text-white/80 text-sm font-medium uppercase tracking-wider"
             >
-              Years Experience
+             {item.title}
             </div>
           </div>
-          <div className="text-center">
-            <div className="text-4xl font-black mb-1">500+</div>
-            <div
-              className="text-white/80 text-sm font-medium uppercase tracking-wider"
-            >
-              Projects Completed
-            </div>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-black mb-1">100%</div>
-            <div
-              className="text-white/80 text-sm font-medium uppercase tracking-wider"
-            >
-              Client Satisfaction
-            </div>
-          </div>
-          <div className="text-center">
-            <div className="text-4xl font-black mb-1">25</div>
-            <div
-              className="text-white/80 text-sm font-medium uppercase tracking-wider"
-            >
-              Master Artisans
-            </div>
-          </div>
+          ))}
+          
         </div>
       </section>
+
       {/* <!-- Our Values Section --> */}
       <section className="px-10 py-20">
         <div className="text-center max-w-2xl mx-auto mb-16">
@@ -148,75 +133,47 @@ function About() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* <!-- Value 1 --> */}
-          <div
+
+          {[
+            {
+              icon:"high_quality",
+              title:"Uncompromising Quality",
+              desc:"We source only premium sustainable hardwoods and composite materials designed to endure the elements."
+            },
+            {
+              icon:"handshake",
+              title:"Absolute Honesty",
+              desc:"Transparent quotes, realistic timelines, and clear communication from design to installation."
+            },
+            {
+              icon:"architecture",
+              title:"Custom Solutions",
+              desc:"We don't do 'cookie-cutter'. Every design is tailored to your home's unique architecture and lifestyle."
+            },
+            {
+              icon:"sentiment_very_satisfied",
+              title:"Total Satisfaction",
+              desc:"Our job isn't done until you are thrilled with your new outdoor sanctuary. We stand by our work."
+            },
+          ].map((item, index) => (
+                <div
             className="p-8 bg-white dark:bg-[#25221f] rounded-xl border border-[#e5e5e0] dark:border-[#33312e] hover:shadow-lg transition-shadow"
+            key={index}
           >
             <div
               className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6"
             >
-              <span className="material-symbols-outlined">high_quality</span>
+              <span className="material-symbols-outlined">{item.icon}</span>
             </div>
-            <h4 className="text-lg font-bold mb-3">Uncompromising Quality</h4>
+            <h4 className="text-lg font-bold mb-3">{item.title}</h4>
             <p
               className="text-[#7c746e] dark:text-[#a39a94] text-sm leading-relaxed"
             >
-              We source only premium sustainable hardwoods and composite
-              materials designed to endure the elements.
+              {item.desc}
             </p>
           </div>
-          {/* <!-- Value 2 --> */}
-          <div
-            className="p-8 bg-white dark:bg-[#25221f] rounded-xl border border-[#e5e5e0] dark:border-[#33312e] hover:shadow-lg transition-shadow"
-          >
-            <div
-              className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6"
-            >
-              <span className="material-symbols-outlined">handshake</span>
-            </div>
-            <h4 className="text-lg font-bold mb-3">Absolute Honesty</h4>
-            <p
-              className="text-[#7c746e] dark:text-[#a39a94] text-sm leading-relaxed"
-            >
-              Transparent quotes, realistic timelines, and clear communication
-              from design to installation.
-            </p>
-          </div>
-          {/* <!-- Value 3 --> */}
-          <div
-            className="p-8 bg-white dark:bg-[#25221f] rounded-xl border border-[#e5e5e0] dark:border-[#33312e] hover:shadow-lg transition-shadow"
-          >
-            <div
-              className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6"
-            >
-              <span className="material-symbols-outlined">architecture</span>
-            </div>
-            <h4 className="text-lg font-bold mb-3">Custom Solutions</h4>
-            <p
-              className="text-[#7c746e] dark:text-[#a39a94] text-sm leading-relaxed"
-            >
-              We don't do 'cookie-cutter'. Every design is tailored to your
-              home's unique architecture and lifestyle.
-            </p>
-          </div>
-          {/* <!-- Value 4 --> */}
-          <div
-            className="p-8 bg-white dark:bg-[#25221f] rounded-xl border border-[#e5e5e0] dark:border-[#33312e] hover:shadow-lg transition-shadow"
-          >
-            <div
-              className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6"
-            >
-              <span className="material-symbols-outlined"
-                >sentiment_very_satisfied</span
-              >
-            </div>
-            <h4 className="text-lg font-bold mb-3">Total Satisfaction</h4>
-            <p
-              className="text-[#7c746e] dark:text-[#a39a94] text-sm leading-relaxed"
-            >
-              Our job isn't done until you are thrilled with your new outdoor
-              sanctuary. We stand by our work.
-            </p>
-          </div>
+          ))}
+          
         </div>
       </section>
       {/* <!-- CTA Section --> */}

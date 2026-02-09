@@ -4,6 +4,7 @@ import Services from './Services';
 import Gallary from './Gallary';
 import Contact from './Contact';
 import Detailservice from './Detailservice';
+import PageNotFound from './PageNotFound';
 
 export {
     Home,
@@ -11,5 +12,6 @@ export {
     Services,
     Gallary,
     Contact,
-    Detailservice
+    Detailservice,
+    PageNotFound
 }

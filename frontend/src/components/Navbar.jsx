@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 function Navbar () {
   return (
     <header className='sticky top-0 z-50 w-full border-b border-solid border-[#f3f2f1] dark:border-[#333] bg-white/80 dark:bg-background-dark/80 backdrop-blur-md px-4 md:px-10 lg:px-40 py-3'>
@@ -20,30 +20,36 @@ function Navbar () {
         </div>
         <div className='hidden md:flex flex-1 justify-end gap-8 items-center'>
           <nav className='flex items-center gap-9'>
-            <a
+            <Link
               className='text-[#161413] dark:text-gray-300 text-sm font-semibold hover:text-primary transition-colors'
-              href='#'
+              to='/'
+            >
+              Home
+            </Link>
+            <Link
+              className='text-[#161413] dark:text-gray-300 text-sm font-semibold hover:text-primary transition-colors'
+              to='/about'
+            >
+              About
+            </Link>
+            <Link
+              className='text-[#161413] dark:text-gray-300 text-sm font-semibold hover:text-primary transition-colors'
+              to='/services'
             >
               Services
-            </a>
-            <a
+            </Link>
+            <Link
               className='text-[#161413] dark:text-gray-300 text-sm font-semibold hover:text-primary transition-colors'
-              href='#'
+              to='/contact'
             >
-              Portfolio
-            </a>
-            <a
+              Contact
+            </Link>  
+            <Link
               className='text-[#161413] dark:text-gray-300 text-sm font-semibold hover:text-primary transition-colors'
-              href='#'
+              to='/gallary'
             >
-              Process
-            </a>
-            <a
-              className='text-[#161413] dark:text-gray-300 text-sm font-semibold hover:text-primary transition-colors'
-              href='#'
-            >
-              About Us
-            </a>
+             Gallary
+            </Link>  
           </nav>
           <button className='flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold shadow-lg hover:shadow-xl transition-all'>
             <span>Get a Quote</span>

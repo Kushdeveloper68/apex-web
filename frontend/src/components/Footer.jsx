@@ -34,22 +34,22 @@ function Footer () {
           <ul className='text-gray-400 text-sm space-y-4'>
             <li>
               <a className='hover:text-white transition-colors' href='#'>
-                Composite Decking
+                Indoor Cladding
               </a>
             </li>
             <li>
               <a className='hover:text-white transition-colors' href='#'>
-                Hardwood Patios
+               Outdoor Cladding
               </a>
             </li>
             <li>
               <a className='hover:text-white transition-colors' href='#'>
-                Outdoor Kitchens
+               Composite Decking
               </a>
             </li>
             <li>
               <a className='hover:text-white transition-colors' href='#'>
-                Pergolas &amp; Gazebos
+                Cabinet Making
               </a>
             </li>
           </ul>
@@ -61,7 +61,7 @@ function Footer () {
           <ul className='text-gray-400 text-sm space-y-4'>
             <li>
               <a className='hover:text-white transition-colors' href='#'>
-                About APEX
+                About 
               </a>
             </li>
             <li>
