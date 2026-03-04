@@ -19,7 +19,7 @@ function Footer () {
               </svg>
             </div>
             <h2 className='text-white text-lg font-bold leading-tight'>
-              APEX Deck &amp; Design
+               Deck &amp; Design
             </h2>
           </div>
           <p className='text-gray-400 text-sm leading-relaxed'>

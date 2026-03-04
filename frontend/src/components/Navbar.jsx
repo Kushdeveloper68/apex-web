@@ -15,7 +15,7 @@ function Navbar () {
             </svg>
           </div>
           <h2 className='text-[#161413] dark:text-white text-xl font-extrabold tracking-tight'>
-            APEX <span className='text-primary'>DECK &amp; DESIGN</span>
+            X <span className='text-primary'>DECK &amp; DESIGN</span>
           </h2>
         </div>
         <div className='hidden md:flex flex-1 justify-end gap-8 items-center'>
