@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 function About() {
   return (
@@ -8,12 +8,13 @@ function About() {
         <a
           className="text-[#7c746e] dark:text-[#a39a94] text-sm font-medium"
           href="#"
-          >Home</a
         >
+          Home
+        </a>
         <span className="text-[#7c746e] text-sm font-medium">/</span>
-        <span className="text-[#161413] dark:text-white text-sm font-medium"
-          >About Us</span
-        >
+        <span className="text-[#161413] dark:text-white text-sm font-medium">
+          About Us
+        </span>
       </div>
       {/* <!-- Hero Section --> */}
       <section className="px-10 pb-12">
@@ -26,13 +27,11 @@ function About() {
                   rgba(0, 0, 0, 0.4),
                   rgba(0, 0, 0, 0.6)
                 ),
-                url('https://lh3.googleusercontent.com/aida-public/AB6AXuDIdvz8FJvG-7qowF4prY57UGwVeIRH-4RJXjpYAsmXHoVeqsxEo7ywSAMPxqaPyBNne-t1IWWsFwKDqOKv-C2lLh3Vl0CnIPU6dbN7Cfr7FfwTE-hz9JlMhGZr8s_RT5T2GjJPzfAGYYof_RjCxhKlFvLVsXJYykgwr2bD27J8Usx0zmFheSYGfC9kgBunV__C-FS0VhCeaymP3YQhtUZ4kdA-lkG8IZ7-AQ1ZvygKbapOq1JYh5Uj9fXQ1lq7rhFfx9lpK87PSF8')`
+                url('https://lh3.googleusercontent.com/aida-public/AB6AXuDIdvz8FJvG-7qowF4prY57UGwVeIRH-4RJXjpYAsmXHoVeqsxEo7ywSAMPxqaPyBNne-t1IWWsFwKDqOKv-C2lLh3Vl0CnIPU6dbN7Cfr7FfwTE-hz9JlMhGZr8s_RT5T2GjJPzfAGYYof_RjCxhKlFvLVsXJYykgwr2bD27J8Usx0zmFheSYGfC9kgBunV__C-FS0VhCeaymP3YQhtUZ4kdA-lkG8IZ7-AQ1ZvygKbapOq1JYh5Uj9fXQ1lq7rhFfx9lpK87PSF8')`,
             }}
           >
             <div className="flex flex-col gap-4 max-w-3xl">
-              <h1
-                className="text-white text-5xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl"
-              >
+              <h1 className="text-white text-5xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl">
                 Craftsmanship Built to Last
               </h1>
               <p className="text-white/90 text-lg font-medium max-w-xl mx-auto">
@@ -42,9 +41,7 @@ function About() {
               </p>
             </div>
             <div className="mt-4">
-              <button
-                className="flex min-w-[180px] cursor-pointer items-center justify-center rounded-lg h-14 px-6 bg-primary text-white text-base font-bold shadow-lg hover:scale-105 transition-transform"
-              >
+              <button className="flex min-w-[180px] cursor-pointer items-center justify-center rounded-lg h-14 px-6 bg-primary text-white text-base font-bold shadow-lg hover:scale-105 transition-transform">
                 View Our Work
               </button>
             </div>
@@ -52,9 +49,7 @@ function About() {
         </div>
       </section>
       {/* <!-- Our Story Section --> */}
-      <section
-        className="px-10 py-20 flex flex-col md:flex-row gap-16 items-center"
-      >
+      <section className="px-10 py-20 flex flex-col md:flex-row gap-16 items-center">
         <div className="flex-1 space-y-6">
           <h2 className="text-primary text-sm font-bold uppercase tracking-widest">
             Our Legacy
@@ -77,17 +72,15 @@ function About() {
           <div className="pt-4">
             <div className="flex items-center gap-4">
               <div className="h-px w-12 bg-primary"></div>
-              <span className="font-bold italic text-primary"
-                >Master Carpenter &amp; Founder</span
-              >
+              <span className="font-bold italic text-primary">
+                Master Carpenter &amp; Founder
+              </span>
             </div>
           </div>
         </div>
         <div className="flex-1 w-full">
           <div className="relative group">
-            <div
-              className="absolute -top-4 -left-4 w-full h-full border-2 border-primary rounded-lg transition-all group-hover:top-0 group-hover:left-0 -z-10"
-            ></div>
+            <div className="absolute -top-4 -left-4 w-full h-full border-2 border-primary rounded-lg transition-all group-hover:top-0 group-hover:left-0 -z-10"></div>
             <div
               className="w-full aspect-[4/5] bg-center bg-cover rounded-lg shadow-xl"
               data-alt="High quality finished hardwood deck with luxury furniture"
@@ -100,25 +93,20 @@ function About() {
       </section>
       {/* <!-- Stats Bar --> */}
       <section className="px-10 py-12">
-        <div
-          className="bg-primary rounded-xl p-10 flex flex-wrap justify-around gap-8 text-white"
-        >
-          {[{count:"15+",title:"Years Experience"},
-          {count:"500+",title:"Projects Completed"},
-          {count:"100%",title:"Client Satisfaction"},
-          {count:"25",title:" Master Artisans"},
-
-          ].map((item , index)=> (
-           <div className="text-center" key={index}>
-            <div className="text-4xl font-black mb-1">{item.count}</div>
-            <div
-              className="text-white/80 text-sm font-medium uppercase tracking-wider"
-            >
-             {item.title}
+        <div className="bg-primary rounded-xl p-10 flex flex-wrap justify-around gap-8 text-white">
+          {[
+            { count: "15+", title: "Years Experience" },
+            { count: "500+", title: "Projects Completed" },
+            { count: "100%", title: "Client Satisfaction" },
+            { count: "25", title: " Master Artisans" },
+          ].map((item, index) => (
+            <div className="text-center" key={index}>
+              <div className="text-4xl font-black mb-1">{item.count}</div>
+              <div className="text-white/80 text-sm font-medium uppercase tracking-wider">
+                {item.title}
+              </div>
             </div>
-          </div>
           ))}
-          
         </div>
       </section>
 
@@ -136,58 +124,47 @@ function About() {
 
           {[
             {
-              icon:"high_quality",
-              title:"Uncompromising Quality",
-              desc:"We source only premium sustainable hardwoods and composite materials designed to endure the elements."
+              icon: "high_quality",
+              title: "Uncompromising Quality",
+              desc: "We source only premium sustainable hardwoods and composite materials designed to endure the elements.",
             },
             {
-              icon:"handshake",
-              title:"Absolute Honesty",
-              desc:"Transparent quotes, realistic timelines, and clear communication from design to installation."
+              icon: "handshake",
+              title: "Absolute Honesty",
+              desc: "Transparent quotes, realistic timelines, and clear communication from design to installation.",
             },
             {
-              icon:"architecture",
-              title:"Custom Solutions",
-              desc:"We don't do 'cookie-cutter'. Every design is tailored to your home's unique architecture and lifestyle."
+              icon: "architecture",
+              title: "Custom Solutions",
+              desc: "We don't do 'cookie-cutter'. Every design is tailored to your home's unique architecture and lifestyle.",
             },
             {
-              icon:"sentiment_very_satisfied",
-              title:"Total Satisfaction",
-              desc:"Our job isn't done until you are thrilled with your new outdoor sanctuary. We stand by our work."
+              icon: "sentiment_very_satisfied",
+              title: "Total Satisfaction",
+              desc: "Our job isn't done until you are thrilled with your new outdoor sanctuary. We stand by our work.",
             },
           ].map((item, index) => (
-                <div
-            className="p-8 bg-white dark:bg-[#25221f] rounded-xl border border-[#e5e5e0] dark:border-[#33312e] hover:shadow-lg transition-shadow"
-            key={index}
-          >
             <div
-              className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6"
+              className="p-8 bg-white dark:bg-[#25221f] rounded-xl border border-[#e5e5e0] dark:border-[#33312e] hover:shadow-lg transition-shadow"
+              key={index}
             >
-              <span className="material-symbols-outlined">{item.icon}</span>
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-6">
+                <span className="material-symbols-outlined">{item.icon}</span>
+              </div>
+              <h4 className="text-lg font-bold mb-3">{item.title}</h4>
+              <p className="text-[#7c746e] dark:text-[#a39a94] text-sm leading-relaxed">
+                {item.desc}
+              </p>
             </div>
-            <h4 className="text-lg font-bold mb-3">{item.title}</h4>
-            <p
-              className="text-[#7c746e] dark:text-[#a39a94] text-sm leading-relaxed"
-            >
-              {item.desc}
-            </p>
-          </div>
           ))}
-          
         </div>
       </section>
       {/* <!-- CTA Section --> */}
       <section className="px-10 py-20">
-        <div
-          className="bg-background-dark dark:bg-black rounded-xl p-12 text-center relative overflow-hidden"
-        >
+        <div className="bg-background-dark dark:bg-black rounded-xl p-12 text-center relative overflow-hidden">
           {/* <!-- Background decoration --> */}
-          <div
-            className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl -mr-32 -mt-32"
-          ></div>
-          <div
-            className="absolute bottom-0 left-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -ml-32 -mb-32"
-          ></div>
+          <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl -mr-32 -mt-32"></div>
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -ml-32 -mb-32"></div>
           <div className="relative z-10 space-y-6">
             <h2 className="text-white text-3xl md:text-4xl font-black">
               Ready to elevate your exterior?
@@ -197,14 +174,10 @@ function About() {
               backyards into premium living spaces.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <button
-                className="bg-primary text-white font-bold h-14 px-10 rounded-lg hover:brightness-110 transition-all"
-              >
+              <button className="bg-primary text-white font-bold h-14 px-10 rounded-lg hover:brightness-110 transition-all">
                 Start Your Quote
               </button>
-              <button
-                className="bg-white/10 hover:bg-white/20 text-white font-bold h-14 px-10 rounded-lg backdrop-blur-sm transition-all"
-              >
+              <button className="bg-white/10 hover:bg-white/20 text-white font-bold h-14 px-10 rounded-lg backdrop-blur-sm transition-all">
                 Browse Portfolio
               </button>
             </div>
@@ -212,7 +185,7 @@ function About() {
         </div>
       </section>
     </main>
-  )
+  );
 }
 
-export default About
+export default About;

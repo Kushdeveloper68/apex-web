@@ -1,8 +1,8 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function PageNotFound() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-background-light via-white to-background-light dark:from-background-dark dark:via-[#2a2520] dark:to-background-dark flex items-center justify-center px-4">
@@ -27,7 +27,8 @@ function PageNotFound() {
               Page Not Found
             </h1>
             <p className="text-lg md:text-xl text-[#7c746e] dark:text-gray-400 leading-relaxed">
-              We're sorry, but the page you're looking for seems to have wandered off like misplaced timber. Let's get you back on track.
+              We're sorry, but the page you're looking for seems to have
+              wandered off like misplaced timber. Let's get you back on track.
             </p>
           </div>
 
@@ -37,7 +38,7 @@ function PageNotFound() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center pt-4">
             <button
-              onClick={() => navigate('/')}
+              onClick={() => navigate("/")}
               className="px-8 h-12 rounded-lg bg-primary text-white font-bold text-base shadow-lg hover:bg-primary/90 transition-all duration-300 hover:scale-105 active:scale-95"
             >
               <span className="flex items-center justify-center gap-2">
@@ -46,7 +47,7 @@ function PageNotFound() {
               </span>
             </button>
             <button
-              onClick={() => navigate('/services')}
+              onClick={() => navigate("/services")}
               className="px-8 h-12 rounded-lg border-2 border-primary text-primary dark:text-accent dark:border-accent font-bold text-base hover:bg-primary/10 dark:hover:bg-accent/10 transition-all duration-300 hover:scale-105 active:scale-95"
             >
               <span className="flex items-center justify-center gap-2">
@@ -59,9 +60,9 @@ function PageNotFound() {
           {/* Footer Message */}
           <div className="pt-8 border-t border-[#f3f2f1] dark:border-[#333] w-full">
             <p className="text-sm text-[#7c746e] dark:text-gray-500">
-              If you believe this is a mistake, please{' '}
-              <button 
-                onClick={() => navigate('/contact')}
+              If you believe this is a mistake, please{" "}
+              <button
+                onClick={() => navigate("/contact")}
                 className="text-primary dark:text-accent font-bold hover:underline transition-all"
               >
                 contact us
@@ -71,7 +72,7 @@ function PageNotFound() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default PageNotFound
+export default PageNotFound;
