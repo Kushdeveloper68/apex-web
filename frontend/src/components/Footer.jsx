@@ -46,7 +46,7 @@ function Footer () {
               <a className='hover:text-white transition-colors' href='#'>
                Composite Decking
               </a>
-            </li>
+            </li>    
             <li>
               <a className='hover:text-white transition-colors' href='#'>
                 Cabinet Making

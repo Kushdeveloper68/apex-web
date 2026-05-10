@@ -1,6 +1,62 @@
-import React from "react";
+import { useState } from "react";
+
+const GOOGLE_SHEETS_ENDPOINT =
+  "https://script.google.com/macros/s/AKfycbzMWOjT12nHljLO6LyJeNH30WDcIG_sNs6FjaO9u45BZvWojbyugNhkRgAoFWXHCWco/exec";
+
+const initialFormState = {
+  Name: "",
+  Email: "",
+  Phone: "",
+  Service: "",
+  Message: "",
+};
 
 function Contact() {
+  const [formData, setFormData] = useState(initialFormState);
+  const [status, setStatus] = useState("idle");
+  const [feedbackMessage, setFeedbackMessage] = useState("");
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+
+    setFormData((currentForm) => ({
+      ...currentForm,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    setStatus("submitting");
+    setFeedbackMessage("");
+
+    try {
+      const body = JSON.stringify({
+        name: formData.Name,
+        email: formData.Email,
+        phone: formData.Phone,
+        service: formData.Service,
+        message: formData.Message,
+      });
+
+      await fetch(GOOGLE_SHEETS_ENDPOINT, {
+        method: "POST",
+        mode: "no-cors",
+        body,
+      });
+
+      setStatus("success");
+      setFeedbackMessage("Thanks. Your enquiry has been sent successfully.");
+      setFormData(initialFormState);
+    } catch {
+      setStatus("error");
+      setFeedbackMessage(
+        "Sorry, we could not send your enquiry right now. Please try again or email us directly.",
+      );
+    }
+  };
+
   return (
     <>
       {/* <!-- Hero Section --> */}
@@ -38,7 +94,7 @@ function Contact() {
             <h2 className="text-2xl font-bold text-[#161413] dark:text-white mb-6">
               Inquire About Your Project
             </h2>
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <label className="flex flex-col gap-2">
                   <span className="text-sm font-bold text-[#161413] dark:text-gray-300 uppercase tracking-wider">
@@ -47,7 +103,11 @@ function Contact() {
                   <input
                     className="form-input w-full rounded-lg border-[#e2e0df] dark:border-[#444] dark:bg-[#1c1916] h-14 p-4 text-base focus:ring-primary focus:border-primary"
                     placeholder="John Smith"
+                    name="Name"
+                    onChange={handleChange}
+                    value={formData.Name}
                     type="text"
+                    required
                   />
                 </label>
                 <label className="flex flex-col gap-2">
@@ -57,7 +117,11 @@ function Contact() {
                   <input
                     className="form-input w-full rounded-lg border-[#e2e0df] dark:border-[#444] dark:bg-[#1c1916] h-14 p-4 text-base focus:ring-primary focus:border-primary"
                     placeholder="0400 000 000"
+                    name="Phone"
+                    onChange={handleChange}
+                    value={formData.Phone}
                     type="tel"
+                    required
                   />
                 </label>
               </div>
@@ -69,22 +133,34 @@ function Contact() {
                   <input
                     className="form-input w-full rounded-lg border-[#e2e0df] dark:border-[#444] dark:bg-[#1c1916] h-14 p-4 text-base focus:ring-primary focus:border-primary"
                     placeholder="john@example.com"
+                    name="Email"
+                    onChange={handleChange}
+                    value={formData.Email}
                     type="email"
+                    required
                   />
                 </label>
                 <label className="flex flex-col gap-2">
                   <span className="text-sm font-bold text-[#161413] dark:text-gray-300 uppercase tracking-wider">
                     Service Interest
                   </span>
-                  <select className="form-input w-full rounded-lg border-[#e2e0df] dark:border-[#444] dark:bg-[#1c1916] h-14 p-4 text-base focus:ring-primary focus:border-primary">
-                    <option disabled="" defaultValue="">
+                  <select
+                    className="form-input w-full rounded-lg border-[#e2e0df] dark:border-[#444] dark:bg-[#1c1916] h-14 p-4 text-base focus:ring-primary focus:border-primary"
+                    name="Service"
+                    onChange={handleChange}
+                    value={formData.Service}
+                    required
+                  >
+                    <option value="" disabled>
                       Select a Service
                     </option>
-                    <option value="custom-decking">Custom Decking</option>
-                    <option value="pergolas">Pergolas &amp; Gazebos</option>
-                    <option value="outdoor-kitchens">Outdoor Kitchens</option>
-                    <option value="landscaping">Integrated Landscaping</option>
-                    <option value="commercial">Commercial Projects</option>
+                    <option value="Custom Decking">Custom Decking</option>
+                    <option value="Pergolas & Gazebos">Pergolas &amp; Gazebos</option>
+                    <option value="Outdoor Kitchens">Outdoor Kitchens</option>
+                    <option value="Integrated Landscaping">
+                      Integrated Landscaping
+                    </option>
+                    <option value="Commercial Projects">Commercial Projects</option>
                   </select>
                 </label>
               </div>
@@ -96,15 +172,38 @@ function Contact() {
                   className="form-input w-full rounded-lg border-[#e2e0df] dark:border-[#444] dark:bg-[#1c1916] p-4 text-base focus:ring-primary focus:border-primary"
                   placeholder="Tell us about your dream outdoor space..."
                   rows="4"
+                  name="Message"
+                  onChange={handleChange}
+                  value={formData.Message}
+                  required
                 ></textarea>
               </label>
               <button
-                className="w-full md:w-auto min-w-[240px] bg-primary text-white font-bold py-4 px-8 rounded-lg hover:bg-opacity-90 transition-all flex items-center justify-center gap-2"
+                className="w-full md:w-auto min-w-[240px] bg-primary text-white font-bold py-4 px-8 rounded-lg hover:bg-opacity-90 transition-all flex items-center justify-center gap-2 disabled:cursor-not-allowed disabled:opacity-70"
                 type="submit"
+                disabled={status === "submitting"}
               >
-                <span>Request Free Quote</span>
-                <span className="material-symbols-outlined text-sm">send</span>
+                <span>
+                  {status === "submitting"
+                    ? "Sending..."
+                    : "Request Free Quote"}
+                </span>
+                <span className="material-symbols-outlined text-sm">
+                  {status === "submitting" ? "progress_activity" : "send"}
+                </span>
               </button>
+              {feedbackMessage ? (
+                <p
+                  className={`text-sm font-medium ${
+                    status === "success"
+                      ? "text-green-600 dark:text-green-400"
+                      : "text-red-600 dark:text-red-400"
+                  }`}
+                  role="status"
+                >
+                  {feedbackMessage}
+                </p>
+              ) : null}
             </form>
             {/* <!-- Trust Badges --> */}
             <div className="mt-10 pt-8 border-t border-[#f3f2f1] dark:border-[#333] flex flex-wrap gap-8 opacity-70">

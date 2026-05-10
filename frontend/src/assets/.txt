@@ -1,0 +1,7 @@
+1. ./images
+
+in it there will be all images that i have to add in website , products , logo etc all stuff images.
+
+2. ./pdfs
+
+in it there will be all pdfs like brochure , details pdfs etc.
