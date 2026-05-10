@@ -1,0 +1,422 @@
+[
+  {
+    "id": "pvc-marble-sheet",
+    "category": "PVC Marble Sheet",
+    "categorySlug": "pvc-marble-sheet",
+    "tagline": "Premium Eco-Friendly Decorative Panel",
+    "shortDescription": "Lightweight, waterproof, flame-retardant PVC marble panels — the ideal alternative to natural marble for walls and interiors.",
+    "description": "PVC Marble Sheet is an eco-friendly decorative panel primarily made of PVC resin with a high-precision marble pattern formed through UV surface treatment. It features lightweight, waterproof, moisture-resistant, flame-retardant properties, and quick installation, making it widely used for interior wall decoration such as bathrooms, kitchens, and background walls — as an ideal alternative to natural marble.",
+    "size": "1220 × 2800 × 3mm",
+    "weight": "21 kg per sheet",
+    "heroImage": "/src/assets/images/pvc-marble-hero.jpg",
+    "cardImage": "/src/assets/images/pvc-marble-card.jpg",
+    "features": [
+      {
+        "icon": "water_drop",
+        "title": "100% Waterproof",
+        "description": "Completely moisture-proof and waterproof — ideal for bathroom walls and kitchen backsplashes."
+      },
+      {
+        "icon": "local_fire_department",
+        "title": "Fire Retardant",
+        "description": "Fire-proof and flame-retardant, enhancing daily fire safety in every installation."
+      },
+      {
+        "icon": "swap_horiz",
+        "title": "Good Flexibility",
+        "description": "Excellent flexibility — performs perfectly even on walls with slight curvature."
+      },
+      {
+        "icon": "construction",
+        "title": "Easy to Install",
+        "description": "1220×2800×3mm at 21 kg — easily installed by just two people, no specialist tools needed."
+      },
+      {
+        "icon": "straighten",
+        "title": "High Flatness",
+        "description": "Fits perfectly flush against the wall after installation for a seamless finish."
+      },
+      {
+        "icon": "light_mode",
+        "title": "High Quality UV Paint",
+        "description": "Premium UV paint delivers a smooth, fine, flawless high-gloss surface."
+      }
+    ],
+    "variants": [
+      {
+        "code": "AW23-001",
+        "name": "Calacatta White",
+        "description": "Classic white with subtle grey veining"
+      },
+      {
+        "code": "AW23-015",
+        "name": "Gold Veined Marble",
+        "description": "White base with dramatic gold veining"
+      },
+      {
+        "code": "AW23-2460",
+        "name": "Arabescato White",
+        "description": "White marble with intricate grey patterns"
+      },
+      {
+        "code": "AW-307C",
+        "name": "Grey Cloud Marble",
+        "description": "Deep grey smoky marble finish"
+      }
+    ],
+    "applications": [
+      "Bathroom Walls",
+      "Kitchen Backsplash",
+      "Feature Walls",
+      "Background Walls",
+      "Commercial Interiors"
+    ],
+    "installationSteps": [
+      "Compact the wall surface (putty powder / cement mortar / wooden boards) and measure flatness to ensure it is within ±3mm.",
+      "Apply neutral structural adhesive to the back of the wall panel with evenly distributed dots along the edge — one dot every 10cm, approximately 200ml per square metre.",
+      "Use metal strips to connect and install the wall panels.",
+      "For corners: ensure wall flatness within ±2mm, ensure the wall is clean and dust-free, then install using structural adhesive. Metal accessories can be used as connectors."
+    ]
+  },
+  {
+    "id": "wpc-wall-panel",
+    "category": "WPC Wall Panel",
+    "categorySlug": "wpc-wall-panel",
+    "tagline": "Innovative & Environmentally Friendly Interior Cladding",
+    "shortDescription": "Real wood texture PVC film over a WPC core — combining natural warmth, zero formaldehyde, and effortless installation.",
+    "description": "WPC Wall Panels use PVC and calcium powder as main raw materials, carefully mixed in a specific proportion and extruded in a high-temperature environment. After cooling, they are covered with a PVC film with a real wood texture, creating a wall decoration material that is both beautiful and practical. Anti-corrosion, eco-friendly, and easy to install with a simple notch-joint system.",
+    "size": "168 × 24 × 2900mm",
+    "weight": "2.465 kg/pcs",
+    "packingDetails": "14 pcs/carton",
+    "heroImage": "/src/assets/images/wpc-wall-hero.jpg",
+    "cardImage": "/src/assets/images/wpc-wall-card.jpg",
+    "features": [
+      {
+        "icon": "pest_control",
+        "title": "Anti-Corrosion & Anti-Insect",
+        "description": "High strength and good toughness — does not rot, deform, or succumb to termites."
+      },
+      {
+        "icon": "eco",
+        "title": "ECO Friendly",
+        "description": "Recyclable material with almost zero formaldehyde release — healthier for your family."
+      },
+      {
+        "icon": "construction",
+        "title": "Easy Installation",
+        "description": "Lap joint system with notch joints — no complicated tools or specialized skills required."
+      },
+      {
+        "icon": "water_drop",
+        "title": "Moisture-Proof",
+        "description": "Low water absorption with strong adaptability to humid environments."
+      }
+    ],
+    "variants": [
+      {
+        "code": "AW-009",
+        "name": "Dark Walnut",
+        "description": "Rich deep walnut tone"
+      },
+      {
+        "code": "AW-054",
+        "name": "Teak Brown",
+        "description": "Warm natural teak finish"
+      },
+      {
+        "code": "AW-119",
+        "name": "Charcoal Black",
+        "description": "Bold charcoal statement"
+      },
+      {
+        "code": "AW-333",
+        "name": "Ash White",
+        "description": "Clean contemporary ash white"
+      }
+    ],
+    "accessories": [
+      {
+        "code": "AWPC-2525",
+        "name": "25×25mm Corner Trim",
+        "size": "25×25×2900mm",
+        "description": "Matching colour trim for clean corners"
+      },
+      {
+        "code": "AWPC-16824",
+        "name": "Flat Connector Strip",
+        "size": "168mm wide",
+        "description": "Seamless panel-to-panel connector"
+      }
+    ],
+    "applications": [
+      "Living Room Feature Walls",
+      "Bedroom Accent Walls",
+      "Office Interiors",
+      "Retail Spaces",
+      "Hospitality Venues"
+    ],
+    "installationSteps": [
+      "Level the wall surface (drywall compound / cement mortar / wood panel) and measure wall flatness to ensure it is within ±3mm.",
+      "Apply neutral structural adhesive to the back of the wall panel — glue dots evenly distributed along panel edges, one dot every 10cm, approximately 200ml per square metre.",
+      "Secure the wall panels using metal strips for a secure, professional finish."
+    ]
+  },
+  {
+    "id": "wpc-outdoor-panel",
+    "category": "WPC Outdoor Panel",
+    "categorySlug": "wpc-outdoor-panel",
+    "tagline": "Weather-Resistant Outdoor Cladding",
+    "shortDescription": "Co-extruded wood-plastic composite panels that won't rot, fade, or require maintenance — built to outlast the elements.",
+    "description": "WPC Outdoor Panels are engineered for exterior applications where durability and aesthetics must coexist. The surface of co-extruded plastic wood is rich in colours, with a natural smooth wooden feel that is durable and does not fade. The all-inclusive and semi-inclusive profile systems allow flexibility across a wide range of facade, fencing, and pergola applications.",
+    "size": "220 × 26 × 2000 / 2900 / 3600mm",
+    "weight": "6.96 kg/pcs",
+    "packingDetails": "4 pcs/carton",
+    "heroImage": "/src/assets/images/wpc-outdoor-hero.jpg",
+    "cardImage": "/src/assets/images/wpc-outdoor-card.jpg",
+    "features": [
+      {
+        "icon": "pest_control",
+        "title": "Insect Resistant",
+        "description": "The unique wood powder + PVC structure keeps termites and insects permanently away."
+      },
+      {
+        "icon": "eco",
+        "title": "Environment Friendly",
+        "description": "Formaldehyde and benzene levels far below national standards — safe for people and planet."
+      },
+      {
+        "icon": "view_column",
+        "title": "Shiplap System",
+        "description": "Easy installation with a simplistic shiplap system using a rabbet joint."
+      },
+      {
+        "icon": "water_drop",
+        "title": "Waterproof",
+        "description": "Eliminates swelling, warping, and perishability common to timber in humid environments."
+      },
+      {
+        "icon": "hardware",
+        "title": "Strong Wear Resistance",
+        "description": "Scratch-resistant surface that does not easily damage — delivering a long service life."
+      },
+      {
+        "icon": "cleaning_services",
+        "title": "Easy to Maintain",
+        "description": "No staining, sealing, or painting required. Easy to clean with minimal effort."
+      }
+    ],
+    "variants": [
+      {
+        "code": "AWO-H1",
+        "name": "Ash Grey",
+        "description": "Modern ash grey tone"
+      },
+      {
+        "code": "AWO-H5",
+        "name": "Teak + Black",
+        "description": "Two-tone teak and black contrast"
+      },
+      {
+        "code": "AWO-H8",
+        "name": "Rosewood",
+        "description": "Warm rosewood finish"
+      },
+      {
+        "code": "AWO-H10",
+        "name": "Charcoal Black",
+        "description": "Deep charcoal exterior finish"
+      },
+      {
+        "code": "AWO-H11",
+        "name": "Light Beige",
+        "description": "Natural light beige neutral"
+      }
+    ],
+    "accessories": [
+      {
+        "code": "AS-43",
+        "name": "50×50mm All-Inclusive Post Cap",
+        "size": "50×50×2900mm",
+        "description": "Full enclosure post finish"
+      },
+      {
+        "code": "AS-54",
+        "name": "49×49mm Semi-Inclusive Post",
+        "size": "49×49×2900mm",
+        "description": "Partial enclosure post trim"
+      }
+    ],
+    "applications": [
+      "Exterior Facade Cladding",
+      "Garden Fencing",
+      "Pergola Side Panels",
+      "Pool Surrounds",
+      "Commercial Building Exteriors"
+    ]
+  },
+  {
+    "id": "ps-panel",
+    "category": "PS Panel",
+    "categorySlug": "ps-panel",
+    "tagline": "Polystyrene Architectural Wall Panels",
+    "shortDescription": "Lightweight, thermally insulating, and sound-absorbing polystyrene panels in multiple architectural profiles for interior applications.",
+    "description": "PS wallboard is a new type of architectural decorative panel made primarily from polystyrene resin through extrusion or moulding processes. It is an ideal wall material in modern architecture — possessing lightweight and high strength, thermal insulation, sound insulation and noise reduction, waterproofing and moisture resistance. Its comprehensive performance far exceeds that of traditional panels.",
+    "size": "Multiple profiles — widths from 130mm to 310mm, all at 2900mm length",
+    "heroImage": "/src/assets/images/ps-panel-hero.jpg",
+    "cardImage": "/src/assets/images/ps-panel-card.jpg",
+    "features": [
+      {
+        "icon": "compress",
+        "title": "Lightweight & High Strength",
+        "description": "Advanced polystyrene composition delivers maximum structural integrity at minimal weight."
+      },
+      {
+        "icon": "thermostat",
+        "title": "Thermal Insulation",
+        "description": "Superior thermal properties help regulate interior temperatures year-round."
+      },
+      {
+        "icon": "volume_off",
+        "title": "Sound Insulation",
+        "description": "Excellent noise reduction properties for quiet, comfortable interior spaces."
+      },
+      {
+        "icon": "water_drop",
+        "title": "Waterproof & Moisture Resistant",
+        "description": "Fully resistant to water and moisture — suitable for kitchens, bathrooms, and damp areas."
+      }
+    ],
+    "variants": [
+      {
+        "code": "APS-033",
+        "name": "Linear Groove 150",
+        "size": "150×12×2900mm",
+        "weight": "1.65 kg/pcs",
+        "packing": "14 pcs/carton",
+        "color": "D09-12"
+      },
+      {
+        "code": "APS-055",
+        "name": "Ripple Profile 160",
+        "size": "160×12×2900mm",
+        "weight": "1.45 kg/pcs",
+        "packing": "18 pcs/carton",
+        "color": "D27-8"
+      },
+      {
+        "code": "APS-048",
+        "name": "Deep Channel 207",
+        "size": "207×21×2900mm",
+        "weight": "2.8 kg/pcs",
+        "packing": "14 pcs/carton",
+        "color": "D15-1 / D15-2"
+      },
+      {
+        "code": "APS-024",
+        "name": "Slim Slat 130",
+        "size": "130×12×2900mm",
+        "weight": "1.3 kg/pcs",
+        "packing": "22 pcs/carton",
+        "color": "D07-5"
+      },
+      {
+        "code": "APS-059",
+        "name": "Wide Flat 310",
+        "size": "310×7×2900mm",
+        "weight": "2.3 kg/pcs",
+        "packing": "12 pcs/carton",
+        "color": "D37-5"
+      },
+      {
+        "code": "APS-039",
+        "name": "Stepped Groove 180",
+        "size": "180×20×2900mm",
+        "weight": "2.0 kg/pcs",
+        "packing": "16 pcs/carton",
+        "color": "D24-13"
+      }
+    ],
+    "applications": [
+      "Interior Decoration",
+      "Ceiling Decoration",
+      "Interior Partitions",
+      "Feature Accent Walls",
+      "Commercial Fit-Outs"
+    ]
+  },
+  {
+    "id": "acoustic-panel",
+    "category": "MDF Acoustic Panel",
+    "categorySlug": "acoustic-panel",
+    "tagline": "Professional-Grade Sound Absorption Panels",
+    "shortDescription": "Slatted MDF acoustic panels that combine stunning wood aesthetics with scientifically engineered sound absorption for any interior.",
+    "description": "MDF Acoustic panels are ideal sound-absorbing decorative materials. Their sound-absorption principle is achieved through acoustic impedance matching and multiple reflections, refractions, and attenuations of sound waves. They offer advantages including sound absorption, environmental friendliness, fire-retardancy, thermal insulation, heat preservation, moisture resistance, mold prevention, easy cleaning, easy cutting, patterned tiling, simple installation, good stability, impact resistance, and cost-effectiveness.",
+    "size": "600 × 21 × 3000mm",
+    "weight": "13.6 kg/pcs",
+    "packingDetails": "2 pcs/carton — Package: 3030×630×56mm",
+    "heroImage": "/src/assets/images/acoustic-hero.jpg",
+    "cardImage": "/src/assets/images/acoustic-card.jpg",
+    "features": [
+      {
+        "icon": "volume_off",
+        "title": "Superior Sound Absorption",
+        "description": "Acoustic impedance matching with multiple reflections and refractions delivers professional-grade noise control."
+      },
+      {
+        "icon": "local_fire_department",
+        "title": "Fire Retardant",
+        "description": "Built-in fire-retardant properties provide safety without compromising aesthetics."
+      },
+      {
+        "icon": "thermostat",
+        "title": "Thermal Insulation",
+        "description": "Absorbs sound and insulates your space from temperature extremes simultaneously."
+      },
+      {
+        "icon": "water_drop",
+        "title": "Moisture & Mold Resistant",
+        "description": "Resistant to moisture and mold — ensuring longevity in all environments."
+      },
+      {
+        "icon": "palette",
+        "title": "Wide Colour Range",
+        "description": "Multiple colour options to meet diverse acoustic decoration requirements."
+      },
+      {
+        "icon": "construction",
+        "title": "Simple Installation",
+        "description": "Easy cutting, patterned tiling, and simple installation with good stability and impact resistance."
+      }
+    ],
+    "variants": [
+      {
+        "code": "JM1114-MBW-H361",
+        "name": "Natural Oak on Black",
+        "description": "Warm natural oak slats on black backing"
+      },
+      {
+        "code": "JM1114-MBW-H362",
+        "name": "Charcoal Mono",
+        "description": "Deep charcoal uniform finish"
+      },
+      {
+        "code": "JM1114-MBW-H363",
+        "name": "Warm Grey",
+        "description": "Contemporary warm grey tone"
+      },
+      {
+        "code": "JM1114-MBW-08WV",
+        "name": "Premium Walnut Wave",
+        "description": "Rich walnut with wave slatting — premium grade"
+      }
+    ],
+    "applications": [
+      "Home Theatres",
+      "Recording Studios",
+      "Office Boardrooms",
+      "Restaurants & Cafes",
+      "Residential Bedrooms",
+      "Conference Rooms"
+    ]
+  }
+]

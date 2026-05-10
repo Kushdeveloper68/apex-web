@@ -1,121 +1,110 @@
 import React from 'react'
-
-function Footer () {
+import { Link } from 'react-router-dom'
+import logo from '../assets/images/apex-logo.png'
+function Footer() {
   return (
-    <footer className='bg-background-dark text-white py-16 border-t border-white/5'>
-      <div className='max-w-[1280px] mx-auto px-10 grid grid-cols-1 md:grid-cols-4 gap-12'>
-        <div className='col-span-1 md:col-span-1'>
-          <div className='flex items-center gap-4 text-accent mb-6'>
-            <div className='size-6'>
-              <svg
-                fill='none'
-                viewBox='0 0 48 48'
-                xmlns='http://www.w3.org/2000/svg'
-              >
-                <path
-                  d='M42.4379 44C42.4379 44 36.0744 33.9038 41.1692 24C46.8624 12.9336 42.2078 4 42.2078 4L7.01134 4C7.01134 4 11.6577 12.932 5.96912 23.9969C0.876273 33.9029 7.27094 44 7.27094 44L42.4379 44Z'
-                  fill='currentColor'
-                ></path>
-              </svg>
+    <footer className='bg-primary text-white'>
+      {/* Main Footer */}
+      <div className='max-w-[1280px] mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12'>
+        {/* Brand */}
+        <div className='lg:col-span-1'>
+          <div className='flex items-center gap-3 mb-5'>
+            <div className='w-16 h-16  rounded-sm flex items-center justify-center'>
+              <img src={logo} alt="apex logo" />
             </div>
-            <h2 className='text-white text-lg font-bold leading-tight'>
-               Deck &amp; Design
-            </h2>
+            <div>
+              <span className='text-white text-lg font-extrabold tracking-tight leading-none'>TRUEBUILD</span>
+              <span className='block text-[10px] font-bold text-accent tracking-[0.15em] uppercase leading-none'>Deck & Turf</span>
+            </div>
           </div>
-          <p className='text-gray-400 text-sm leading-relaxed'>
-            Crafting premium outdoor living spaces with precision engineering
-            and architectural vision since 2008.
+          <p className='text-white/60 text-sm leading-relaxed mb-6'>
+            Premium decoration materials — PVC Marble Sheets, WPC Wall & Outdoor Panels, PS Panels, and MDF Acoustic Panels. Trusted by professionals, chosen for quality.
           </p>
+          <div className='flex gap-3'>
+            {['share', 'camera', 'mail'].map(icon => (
+              <a key={icon} href='#' className='w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center hover:bg-accent transition-all'>
+                <span className='material-symbols-outlined text-sm'>{icon}</span>
+              </a>
+            ))}
+          </div>
         </div>
+
+        {/* Products */}
         <div>
-          <h4 className='font-bold mb-6 uppercase text-xs tracking-widest text-accent'>
-            Services
-          </h4>
-          <ul className='text-gray-400 text-sm space-y-4'>
-            <li>
-              <a className='hover:text-white transition-colors' href='#'>
-                Indoor Cladding
-              </a>
-            </li>
-            <li>
-              <a className='hover:text-white transition-colors' href='#'>
-               Outdoor Cladding
-              </a>
-            </li>
-            <li>
-              <a className='hover:text-white transition-colors' href='#'>
-               Composite Decking
-              </a>
-            </li>    
-            <li>
-              <a className='hover:text-white transition-colors' href='#'>
-                Cabinet Making
-              </a>
-            </li>
+          <h4 className='font-bold mb-5 uppercase text-xs tracking-widest text-accent'>Products</h4>
+          <ul className='text-white/60 text-sm space-y-3'>
+            {[
+              { label: 'PVC Marble Sheet', id: 'pvc-marble-sheet' },
+              { label: 'WPC Wall Panel', id: 'wpc-wall-panel' },
+              { label: 'WPC Outdoor Panel', id: 'wpc-outdoor-panel' },
+              { label: 'PS Panel', id: 'ps-panel' },
+              { label: 'MDF Acoustic Panel', id: 'acoustic-panel' },
+            ].map(item => (
+              <li key={item.id}>
+                <Link to={`/detailservice/${item.id}`} className='hover:text-accent transition-colors'>
+                  {item.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
+
+        {/* Company */}
         <div>
-          <h4 className='font-bold mb-6 uppercase text-xs tracking-widest text-accent'>
-            Company
-          </h4>
-          <ul className='text-gray-400 text-sm space-y-4'>
-            <li>
-              <a className='hover:text-white transition-colors' href='#'>
-                About 
-              </a>
-            </li>
-            <li>
-              <a className='hover:text-white transition-colors' href='#'>
-                Project Gallery
-              </a>
-            </li>
-            <li>
-              <a className='hover:text-white transition-colors' href='#'>
-                Testimonials
-              </a>
-            </li>
-            <li>
-              <a className='hover:text-white transition-colors' href='#'>
-                Contact Us
-              </a>
-            </li>
+          <h4 className='font-bold mb-5 uppercase text-xs tracking-widest text-accent'>Company</h4>
+          <ul className='text-white/60 text-sm space-y-3'>
+            {[
+              { to: '/about', label: 'About Us' },
+              { to: '/services', label: 'All Products' },
+              { to: '/gallary', label: 'Project Gallery' },
+              { to: '/contact', label: 'Contact Us' },
+              { to: '/contact', label: 'Get a Quote' },
+            ].map(item => (
+              <li key={item.label}>
+                <Link to={item.to} className='hover:text-accent transition-colors'>{item.label}</Link>
+              </li>
+            ))}
           </ul>
         </div>
+
+        {/* Contact Info */}
         <div>
-          <h4 className='font-bold mb-6 uppercase text-xs tracking-widest text-accent'>
-            Connect
-          </h4>
-          <div className='flex gap-4'>
-            <a
-              className='w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-all'
-              href='#'
-            >
-              <span className='material-symbols-outlined text-sm'>share</span>
-            </a>
-            <a
-              className='w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-all'
-              href='#'
-            >
-              <span className='material-symbols-outlined text-sm'>camera</span>
-            </a>
-            <a
-              className='w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-all'
-              href='#'
-            >
-              <span className='material-symbols-outlined text-sm'>mail</span>
-            </a>
+          <h4 className='font-bold mb-5 uppercase text-xs tracking-widest text-accent'>Get In Touch</h4>
+          <div className='space-y-4 text-sm text-white/60'>
+            <div className='flex items-start gap-3'>
+              <span className='material-symbols-outlined text-accent text-base mt-0.5'>call</span>
+              <div>
+                <p className='text-white font-semibold'>Call Us</p>
+                <p>1300 APEX DECK</p>
+                <p className='text-xs'>Mon – Fri, 8am – 6pm</p>
+              </div>
+            </div>
+            <div className='flex items-start gap-3'>
+              <span className='material-symbols-outlined text-accent text-base mt-0.5'>mail</span>
+              <div>
+                <p className='text-white font-semibold'>Email Us</p>
+                <p>hello@apexdeckdesign.com.au</p>
+              </div>
+            </div>
+            <div className='flex items-start gap-3'>
+              <span className='material-symbols-outlined text-accent text-base mt-0.5'>location_on</span>
+              <div>
+                <p className='text-white font-semibold'>Service Areas</p>
+                <p>Greater Sydney · Melbourne<br/>Brisbane · Canberra</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className='max-w-[1280px] mx-auto px-10 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between text-gray-500 text-xs'>
-        <p>© 2024 APEX Deck &amp; Design. All rights reserved.</p>
-        <div className='flex gap-6 mt-4 md:mt-0'>
-          <a className='hover:text-white' href='#'>
-            Privacy Policy
-          </a>
-          <a className='hover:text-white' href='#'>
-            Terms of Service
-          </a>
+
+      {/* Bottom Bar */}
+      <div className='border-t border-white/10'>
+        <div className='max-w-[1280px] mx-auto px-6 py-5 flex flex-col sm:flex-row justify-between items-center gap-3 text-white/40 text-xs'>
+          <p>© 2024 APEX Deck & Design. All rights reserved.</p>
+          <div className='flex gap-6'>
+            <a href='#' className='hover:text-white transition-colors'>Privacy Policy</a>
+            <a href='#' className='hover:text-white transition-colors'>Terms of Service</a>
+          </div>
         </div>
       </div>
     </footer>

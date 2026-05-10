@@ -1,179 +1,198 @@
-import React from "react";
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
+import products from '../utilities/products.json'
 
-let serviceslist = [
-  {
-    title: "Indoor Cladding",
-    description:
-      "Enhance your interior spaces with the natural warmth and sophisticated texture of custom timber wall treatments. We specialize in feature walls that breathe life into living areas and office spaces.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBPWIS1EfstEUGm56GVJ78PSNxgvFfVjvGrvphnFLCj1fsjCinXFGsjY3KaRz9sfnTAgolA4bITZf5q66OSLDnozpr-K3Ybr032slz4kOG6Y-Bf9FRcTiBDYnJNqfZwRPUrmhijECg2njzKfbMO7btEEDZaIZ94V8uoD9avQD5SANdNe4i6xDAfizgl2SKBr3zm213n7AN7AGTr90w67xrHs8wCXtotYgThurs_CprqW4785o2TSnS6n_i5N6RWqJrjFiaXe_Nun28",
-    specs: [
-      " Sustainable Hardwood Selection",
-      " Seamless Precision Installation",
-    ],
-  },
-  {
-    title: "Outdoor Cladding",
-    description:
-      "Protect and beautify your home with durable, weather-resistant cladding solutions designed for architectural impact. Our treatments are built to withstand the elements while maintaining their aesthetic brilliance.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuC6L1Hyd5i0-pjwwUxds1NrxgseAD4nMFZ3cO7amIiceN6q5HujfxT6pKQg5k5iwvP1djgvf2ji09maKqaQdn-9HBBvrwkdyZtdEqCR6D-XRZGqfwiJ8UPXd_qRZha1GC_ilfQAc2VM2K_rHvweefCLvXcloJbLCIXo7qRP-GPJRgWIAiTpdW-LO-cVgDcTdEQF9kTtuAQCpspW2so3iVYNvSEhWGp_s6BosqUWuvHYZANw8Hc8Z0TL9ltfSDFsTCUKZEvFVw7J3Rk",
-    specs: ["Weather-Proof Finishes", "Modern Shiplap &amp; Tongue-and-Groove"],
-  },
-  {
-    title: "Composite Decking",
-    description:
-      "Revolutionize your outdoor living with high-performance composite decking. Combining the beauty of real wood with ultra-low maintenance, it’s the perfect foundation for your backyard retreat.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuC9VRSGoDNOzJ_ut69LkHEtAZyGIRVPc72vMQ3Ih-hWhh91iqw-uJ62993Gm1POWpaPIXswY_7_EemNMblQwn9KaotbC_w06Dl8oLBT4Gq_UytDcVxhta5HIaJMJlyiCSGwXFMGoizlfUM-HBs26KWXEcJgbqGUzaCnn7AhXT1EFPO58-5c376MMxLVCXPo3AAkCdf0LQof_sCurPrVLJEgy_0lNsI5Mw8Cu644HFwSwfvK7DsARVwBNhg2sOvzEMxEuNdC5sCHaZI",
-    specs: ["Rot &amp; Fade Resistant", "Hidden Fastener Systems"],
-  },
-  {
-    title: "Cabinet Making",
-    description:
-      "Bespoke cabinetry that blends functionality with artisan quality. From minimalist kitchen units to grand library shelves, our master carpenters bring precision to every joint.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBmR1HBnzsicSDsEauOBBX667a0WK0sfmGGlAJCoFG6tlWOteP3k-u2vs8qHHruwDY_wbeTczoJnOhW5VLQn8Wp_nYYCAhNhysdlUhtC26Kf1OoUNXggYcaFyAu2qy0hQcplusS9Ac-fIaQIAOsT6Hzz8zVJZgSNNhLVBzNZ6Y2RRvYvx3NfYdLcAQkwhTDhn6YPY8LFnR110Vj5nIiepwT51R0YXC4SX4WNrO5-L5_JEqI3fwq7Yj7xZycvYCOrRhu4euFKEfzbrk",
-    specs: ["Tailored Storage Solutions", "Premium Hardware &amp; Soft-Close"],
-  },
-  {
-    title: " Pergola Installation",
-    description:
-      " Create a stunning focal point for your garden. Our custom-designed pergolas offer the perfect balance of shade and architectural elegance, extending your living space outdoors.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBsVC8UlHibfXZ-6TzNWvbL360a53AMG-0Tx_zMDfAG3oH0bEG6E6hCWmgYdOHT8TbnUeA8bWL2GEtCTu5ml_WGLlVWfQkgrXqXWhw0nr7VSTZsut2JXOPtIZF63YCi_YplVpPr_nnCY5G7rHmPw8NgIrqfWLiDBWWo1LFt6w5-dlObKaPkB-vDIVhXZmHveJqd6aCXyFTN9vpsliSsKMYgooPw87jXwPWT_MeMHCmpQtKaPm8Z1h7fDchBk0VWjNy3EzbM2g-0Wvs",
-    specs: ["Bespoke Timber Frame Design", " Structural Integrity Guaranteed"],
-  },
-];
+const PRODUCT_IMAGES = {
+  'pvc-marble-sheet': 'https://lh3.googleusercontent.com/aida-public/AB6AXuBw4UQsgEBvuIZ8Vm7QQ35jkvdA8aGarXZtIkT6SmhodGWOeeBQxUsk0sYc0LfzM5xxAXnTxKTu41R7IbiRum_kMwcLCQldUoyWy5xeACmCTDMiMghFru9fZfOhZK2koQ5kp1DHq9Onww8qsbNpF_8-rAzbRqHVPEU4KQloomeWvM_wRmx5MReJ5L_v1g-7Lzdp9qicqz_BgAem2i88t5YRSJy3aAEt4gZke-K0tfQdxseN1N_Z18ypAevSzJj2xNBirsPt0SIcM5c',
+  'wpc-wall-panel': 'https://lh3.googleusercontent.com/aida-public/AB6AXuB2OjFi75srM9T55OfsCB3p9n0uFMFE63S9S0w_WQgnIkqAXomtGePyHXn9d_sYmiTG_6ADTkxxeN4X_mem88TnB_5K-TwbZ41X3bMT2yrmkSBkjk5HJVn3Nqit28A27q56YuNonHZjxL2wZ9vPlmG_5z-xKjbynEr35MIsNYFm7qwZ8O26GbXniJrZOccFAl118xyIj6gyMx9U3srtbQuhIrY_tdxsOFE7Cpk5t-YWhZv6uWWqwcDg6mTFx4MuwvT68zsRdMC_EQ8',
+  'wpc-outdoor-panel': 'https://lh3.googleusercontent.com/aida-public/AB6AXuCl51Z08CevNeDMASjB-pQOR63yvmdYJzrYX_EJkQnQ_MgwAcY7r2Qx_hv5oehUi-h9QY-tUrksj9xntV9pQDRZhAgVZrCCk8HpjFVDCIBBN7znYosafW5L99TEpHj_YngW6k6ZB_AH0Q6JsCN-QJtoQET6lzjoNfhG0VlToMznXqbVbzinfNm4zF9Iuhjh5GH7BCwb5bwkSATbz9OdZP1tPGT0RK9gFdfmLJpAvi2pjm8xJjUkZJWLwr1Ew2hqtPnGMTk9OPpPLgw',
+  'ps-panel': 'https://lh3.googleusercontent.com/aida-public/AB6AXuBimconrjzFo0N77I1uWGBfkmcgkwWP9LFHCLuEdMRz8APmVdqXL_oPTZRMJ06g65lMzTa8fDZu2uPg1wnRb_4CVMiVhBWvrBqaJWzzZsaNqcALj-YcvpCAeQ-yChtqB5F014rnLUjwnvt7q4abG2oev2hhUxDT5XXCyGS6ixTRx-6Q69PzSFaIrsPazJIcFBm7ps1gP3Lhh-2v28HSx2m30vqSVbbHajD6LEbHy7HKCsTBO87nhmezx7OvMCW5_lTJdcyKWFWyjkM',
+  'acoustic-panel': 'https://lh3.googleusercontent.com/aida-public/AB6AXuDVY6P9Mt1wn5Uu1K9yyOgFpalERUckrAyLuDZi03FpHDG-Y7hmJtpobi-_Bq-iPdBoAqSg4-GJRpCgI1YdOo01p0AfxzMMiwlsbZndNKGlU5wgRH2ysUAAhR3tsJq1bGsOhJzoNhUhXPChZdhd0FFh94xFN7NeHWjHchoNbdrHlHViV7241c6Re6FFt5X3US6Yw4DQFG1Oi-VldFUkPwskkU80r17p10ISRiWGg3YEyfdeHfM7hVWXqpgm1iwW6qcxvhfKjEKB-rw',
+}
+
+const CATEGORIES = ['All', 'Indoor', 'Outdoor', 'Acoustic']
+
+const PRODUCT_CATEGORY_MAP = {
+  'pvc-marble-sheet': 'Indoor',
+  'wpc-wall-panel': 'Indoor',
+  'wpc-outdoor-panel': 'Outdoor',
+  'ps-panel': 'Indoor',
+  'acoustic-panel': 'Acoustic',
+}
+
 function Services() {
+  const [activeFilter, setActiveFilter] = useState('All')
+
+  const filtered = products.filter(p =>
+    activeFilter === 'All' || PRODUCT_CATEGORY_MAP[p.id] === activeFilter
+  )
+
   return (
     <>
-      {/* <!-- HeroSection --> */}
-      <section className="relative w-full">
-        <div className="px-4 md:px-10 lg:px-40 py-10">
-          <div className="@container">
-            <div
-              className="flex min-h-[500px] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl items-center justify-center p-8 text-center shadow-2xl overflow-hidden relative"
-              data-alt="Rich dark timber wood grain texture background"
-              style={{
-                backgroundImage: `linear-gradient(
-                    rgba(0, 0, 0, 0.4) 0%,
-                    rgba(0, 0, 0, 0.6) 100%
-                  ),
-                  url('https://lh3.googleusercontent.com/aida-public/AB6AXuDcw0QrWwZiRJLUcIYjPGgZ7kRVInVE9CkZaZQlPS2htbL3XLh72adFppzjGAxQqbQa4QUYY5rSTw63SwQL1H882GXcNY3gyfuWWSBDDTfWxT3s0kzKPoh0gmixfcjBM_lXmbG120udP2Ysj5Kakumb3bOWDvF5pRLxv6jOcSUcPoj0R9Y3LWE2CjX1PwOUJj2VV76KKA0Sn5G8axKxE1dM8TV927fBemGYxW7dYjc3JUH9f9mrfZNlIMO4OcbHYiBH7eIv0J_gr6I')`,
-              }}
-            >
-              <div className="flex flex-col gap-4 max-w-3xl">
-                <h1 className="text-white text-4xl md:text-6xl font-serif leading-tight">
-                  Mastering the Art of Timber &amp; Exterior Design
-                </h1>
-                <p className="text-white/90 text-base md:text-xl font-light tracking-wide max-w-2xl mx-auto">
-                  Premium carpentry and bespoke exterior solutions meticulously
-                  crafted for modern living spaces.
-                </p>
+      {/* Hero */}
+      <section className='relative'>
+        <div className='max-w-[1280px] mx-auto px-6 py-8'>
+          <div
+            className='flex min-h-[420px] flex-col gap-6 bg-cover bg-center rounded-2xl items-start justify-end px-10 pb-14 shadow-product overflow-hidden'
+            style={{
+              backgroundImage: `linear-gradient(to top, rgba(28,25,22,0.85) 30%, rgba(28,25,22,0.2) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDcw0QrWwZiRJLUcIYjPGgZ7kRVInVE9CkZaZQlPS2htbL3XLh72adFppzjGAxQqbQa4QUYY5rSTw63SwQL1H882GXcNY3gyfuWWSBDDTfWxT3s0kzKPoh0gmixfcjBM_lXmbG120udP2Ysj5Kakumb3bOWDvF5pRLxv6jOcSUcPoj0R9Y3LWE2CjX1PwOUJj2VV76KKA0Sn5G8axKxE1dM8TV927fBemGYxW7dYjc3JUH9f9mrfZNlIMO4OcbHYiBH7eIv0J_gr6I')`,
+            }}
+          >
+            <div className='max-w-2xl'>
+              <div className='inline-flex items-center gap-2 bg-accent/20 border border-accent/30 px-3 py-1 rounded-full text-accent text-[10px] font-bold uppercase tracking-widest mb-5'>
+                Premium Decoration Materials
               </div>
-              <div className="mt-4">
-                <button className="flex min-w-[180px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold tracking-wide hover:bg-primary/90 transition-all border border-white/20">
-                  <span>View Our Portfolio</span>
-                </button>
-              </div>
+              <h1 className='text-white text-4xl md:text-5xl font-black leading-tight mb-4'>
+                All Products
+              </h1>
+              <p className='text-white/80 text-base leading-relaxed'>
+                PVC Marble Sheets · WPC Wall & Outdoor Panels · PS Panels · MDF Acoustic Panels. Every product is professional-grade, eco-friendly, and designed for lasting performance.
+              </p>
             </div>
           </div>
         </div>
       </section>
-      {/* <!-- Section Title --> */}
-      <div className="px-4 md:px-10 lg:px-40">
-        <div className="flex flex-col gap-2 py-10 border-b border-[#f3f2f1] dark:border-[#333]">
-          <h2 className="text-primary text-sm font-bold uppercase tracking-[0.2em]">
-            Our Expertise
-          </h2>
-          <h3 className="text-[#161413] dark:text-white text-3xl md:text-4xl font-serif">
-            Craftsmanship Services
-          </h3>
+
+      {/* Filter Bar */}
+      <div className='sticky top-[65px] z-30 bg-white/95 backdrop-blur-md border-b border-border-light'>
+        <div className='max-w-[1280px] mx-auto px-6 py-3 flex items-center gap-3 overflow-x-auto'>
+          {CATEGORIES.map(cat => (
+            <button
+              key={cat}
+              onClick={() => setActiveFilter(cat)}
+              className={`shrink-0 px-5 h-9 rounded-full text-sm font-bold transition-all ${
+                activeFilter === cat
+                  ? 'bg-primary text-white'
+                  : 'bg-surface text-primary hover:bg-accent/10 border border-border-light'
+              }`}
+            >
+              {cat}
+            </button>
+          ))}
+          <div className='ml-auto shrink-0 text-xs text-text-muted font-semibold'>
+            {filtered.length} product{filtered.length !== 1 ? 's' : ''}
+          </div>
         </div>
       </div>
-      {/* <!-- Services Cards - Alternating Layout --> */}
-      <main className="px-4 md:px-10 lg:px-40 flex flex-col gap-20 py-20">
-        {serviceslist.map((service, index) => (
-          <div
-            key={index}
-            className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20"
-          >
-            {/* Text Content */}
-            <div
-              className={`flex-1 flex flex-col gap-6 ${
-                index % 2 === 0 ? "order-2 lg:order-1" : "order-1 lg:order-2"
-              }`}
-            >
-              <div className="flex flex-col gap-3">
-                <h3 className="text-[#161413] dark:text-white text-2xl md:text-3xl font-serif">
-                  {service.title}
-                </h3>
-                <p className="text-[#7c746e] dark:text-gray-400 text-base md:text-lg leading-relaxed">
-                  {service.description}
-                </p>
-              </div>
-              <ul className="flex flex-col gap-2">
-                {service.specs.map((spec, specIndex) => (
-                  <li
-                    key={specIndex}
-                    className="flex items-center gap-2 text-sm text-[#161413] dark:text-gray-300"
-                  >
-                    <span className="material-symbols-outlined text-primary text-lg">
-                      check_circle
-                    </span>
-                    {spec}
-                  </li>
-                ))}
-              </ul>
-              <button className="flex items-center justify-center gap-2 rounded-lg h-10 px-6 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold w-fit hover:bg-primary hover:text-white transition-all">
-                <span>Learn More</span>
-                <span className="material-symbols-outlined text-sm">
-                  arrow_forward
-                </span>
-              </button>
-            </div>
-            {/* Image */}
-            <div
-              className={`flex-1 w-full ${
-                index % 2 === 0 ? "order-1 lg:order-2" : "order-2 lg:order-1"
-              }`}
-            >
-              <div
-                className="aspect-[16/10] bg-center bg-cover rounded-xl shadow-xl overflow-hidden group"
-                style={{
-                  backgroundImage: `url('${service.image}')`,
-                }}
-              >
-                <div className="w-full h-full bg-black/0 group-hover:bg-black/10 transition-all duration-500"></div>
-              </div>
-            </div>
-          </div>
-        ))}
-      </main>
-      {/* <!-- CTA Section --> */}
 
-      <section className="bg-primary py-20 mt-10">
-        <div className="px-4 md:px-10 lg:px-40 text-center flex flex-col items-center gap-8">
-          <h2 className="text-white text-3xl md:text-5xl font-serif">
+      {/* Products Grid */}
+      <main className='max-w-[1280px] mx-auto px-6 py-16'>
+        <div className='flex flex-col gap-20'>
+          {filtered.map((product, index) => (
+            <div key={product.id} className='flex flex-col lg:flex-row items-center gap-12 lg:gap-16'>
+              {/* Image */}
+              <div className={`flex-1 w-full ${index % 2 === 0 ? 'order-1' : 'order-1 lg:order-2'}`}>
+                <div
+                  className='aspect-[16/10] bg-center bg-cover rounded-2xl shadow-product overflow-hidden group relative'
+                  style={{ backgroundImage: `url('${PRODUCT_IMAGES[product.id]}')` }}
+                >
+                  <div className='absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-500' />
+                </div>
+              </div>
+
+              {/* Text */}
+              <div className={`flex-1 flex flex-col gap-5 ${index % 2 === 0 ? 'order-2' : 'order-2 lg:order-1'}`}>
+                <div className='accent-divider' />
+                <div className='flex items-center gap-3'>
+                  <span className={`px-3 py-1 text-[10px] font-bold uppercase tracking-widest rounded-md ${
+                    PRODUCT_CATEGORY_MAP[product.id] === 'Indoor'
+                      ? 'bg-blue-50 text-blue-600'
+                      : PRODUCT_CATEGORY_MAP[product.id] === 'Outdoor'
+                        ? 'bg-green-50 text-green-600'
+                        : 'bg-purple-50 text-purple-600'
+                  }`}>
+                    {PRODUCT_CATEGORY_MAP[product.id]}
+                  </span>
+                </div>
+
+                <h2 className='text-3xl font-black text-primary leading-tight'>
+                  {product.category}
+                </h2>
+
+                <p className='text-text-muted text-base leading-relaxed'>
+                  {product.shortDescription}
+                </p>
+
+                {/* Size / Weight */}
+                <div className='flex flex-wrap gap-3'>
+                  {product.size && (
+                    <div className='flex items-center gap-2 bg-surface border border-border-light rounded-lg px-3 py-2'>
+                      <span className='material-symbols-outlined text-accent text-sm'>straighten</span>
+                      <span className='text-xs text-primary font-semibold'>{product.size}</span>
+                    </div>
+                  )}
+                  {product.weight && (
+                    <div className='flex items-center gap-2 bg-surface border border-border-light rounded-lg px-3 py-2'>
+                      <span className='material-symbols-outlined text-accent text-sm'>scale</span>
+                      <span className='text-xs text-primary font-semibold'>{product.weight}</span>
+                    </div>
+                  )}
+                  {product.variants && (
+                    <div className='flex items-center gap-2 bg-surface border border-border-light rounded-lg px-3 py-2'>
+                      <span className='material-symbols-outlined text-accent text-sm'>palette</span>
+                      <span className='text-xs text-primary font-semibold'>{product.variants.length} Colour Options</span>
+                    </div>
+                  )}
+                </div>
+
+                {/* Key Features preview */}
+                <ul className='space-y-2'>
+                  {product.features.slice(0, 3).map((f, fi) => (
+                    <li key={fi} className='flex items-center gap-3 text-sm text-primary'>
+                      <span className='material-symbols-outlined text-accent text-base'>{f.icon}</span>
+                      <span className='font-semibold'>{f.title}</span>
+                      <span className='text-text-muted'>— {f.description.split(' ').slice(0, 8).join(' ')}…</span>
+                    </li>
+                  ))}
+                </ul>
+
+                {/* Applications */}
+                {product.applications && (
+                  <div className='flex flex-wrap gap-2'>
+                    {product.applications.map((app, ai) => (
+                      <span key={ai} className='px-3 py-1 bg-surface border border-border-light rounded-full text-xs text-primary font-medium'>
+                        {app}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
+                <Link
+                  to={`/detailservice/${product.id}`}
+                  className='flex items-center gap-2 w-fit mt-2 px-6 py-3 bg-primary text-white rounded-xl font-bold text-sm hover:bg-primary/90 transition-all shadow-sm'
+                >
+                  <span>View Full Details</span>
+                  <span className='material-symbols-outlined text-accent text-base'>arrow_forward</span>
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </main>
+
+      {/* CTA Section */}
+      <section className='bg-primary py-20'>
+        <div className='max-w-[1280px] mx-auto px-6 text-center flex flex-col items-center gap-7'>
+          <div className='accent-divider mx-auto' />
+          <h2 className='text-white text-4xl font-black leading-tight'>
             Ready to transform your space?
           </h2>
-          <p className="text-white/80 text-lg max-w-2xl">
-            Whether it's a small interior refresh or a complete exterior
-            overhaul, our team of experts is ready to bring your vision to life.
+          <p className='text-white/70 text-lg max-w-2xl'>
+            Whether it's an interior refresh or a complete exterior overhaul, our team will help you choose the right product and deliver it to your door.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <button className="px-8 h-12 rounded-lg bg-white text-primary font-bold shadow-xl hover:scale-105 transition-transform">
-              Request a Free Consultation
-            </button>
-            <button className="px-8 h-12 rounded-lg border border-white text-white font-bold hover:bg-white/10 transition-colors">
-              View Our Portfolio
-            </button>
+          <div className='flex flex-wrap justify-center  gap-4'>
+        {/* text is touching the top of buttons , i want to make the classes so they  them center */}
+            <Link to='/contact' className='  px-8 h-12  rounded-xl bg-accent text-white font-bold shadow-xl hover:bg-accent-light transition-all'>
+              Request a Free Quote
+            </Link>
+            <Link to='/gallary' className='px-8 h-12 rounded-xl border border-white/20 text-white font-bold hover:bg-white/10 transition-all'>
+              View Portfolio
+            </Link>
           </div>
         </div>
       </section>
     </>
-  );
+  )
 }
 
-export default Services;
+export default Services
