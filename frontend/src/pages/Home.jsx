@@ -9,35 +9,35 @@ const HERO_SERVICES = [
     id: 'pvc-marble-sheet',
     description: 'Waterproof, flame-retardant marble-look panels for bathrooms & feature walls.',
     icon: 'texture',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBw4UQsgEBvuIZ8Vm7QQ35jkvdA8aGarXZtIkT6SmhodGWOeeBQxUsk0sYc0LfzM5xxAXnTxKTu41R7IbiRum_kMwcLCQldUoyWy5xeACmCTDMiMghFru9fZfOhZK2koQ5kp1DHq9Onww8qsbNpF_8-rAzbRqHVPEU4KQloomeWvM_wRmx5MReJ5L_v1g-7Lzdp9qicqz_BgAem2i88t5YRSJy3aAEt4gZke-K0tfQdxseN1N_Z18ypAevSzJj2xNBirsPt0SIcM5c',
+    image: 'https://5.imimg.com/data5/ANDROID/Default/2024/4/412131521/OI/JI/DW/67194266/product-jpeg-500x500.jpg',
   },
   {
     title: 'WPC Wall Panel',
     id: 'wpc-wall-panel',
     description: 'Real wood texture, zero formaldehyde, easy notch-joint installation for interiors.',
     icon: 'view_column',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB2OjFi75srM9T55OfsCB3p9n0uFMFE63S9S0w_WQgnIkqAXomtGePyHXn9d_sYmiTG_6ADTkxxeN4X_mem88TnB_5K-TwbZ41X3bMT2yrmkSBkjk5HJVn3Nqit28A27q56YuNonHZjxL2wZ9vPlmG_5z-xKjbynEr35MIsNYFm7qwZ8O26GbXniJrZOccFAl118xyIj6gyMx9U3srtbQuhIrY_tdxsOFE7Cpk5t-YWhZv6uWWqwcDg6mTFx4MuwvT68zsRdMC_EQ8',
+    image: 'https://meterny.com/wp-content/uploads/2024/04/70-10.png',
   },
   {
     title: 'WPC Outdoor Panel',
     id: 'wpc-outdoor-panel',
     description: 'Weather-resistant co-extruded cladding for facades, fencing & pergolas.',
     icon: 'home_work',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCl51Z08CevNeDMASjB-pQOR63yvmdYJzrYX_EJkQnQ_MgwAcY7r2Qx_hv5oehUi-h9QY-tUrksj9xntV9pQDRZhAgVZrCCk8HpjFVDCIBBN7znYosafW5L99TEpHj_YngW6k6ZB_AH0Q6JsCN-QJtoQET6lzjoNfhG0VlToMznXqbVbzinfNm4zF9Iuhjh5GH7BCwb5bwkSATbz9OdZP1tPGT0RK9gFdfmLJpAvi2pjm8xJjUkZJWLwr1Ew2hqtPnGMTk9OPpPLgw',
+    image: 'https://image.made-in-china.com/2f0j00ruhkFcVJnUoD/Wall-Cladding-Wooden-Wall-Panels-Outdoor-Wall-Cladding.jpg',
   },
   {
     title: 'PS Panel',
     id: 'ps-panel',
     description: 'Lightweight polystyrene panels with thermal insulation & sound reduction.',
     icon: 'layers',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBimconrjzFo0N77I1uWGBfkmcgkwWP9LFHCLuEdMRz8APmVdqXL_oPTZRMJ06g65lMzTa8fDZu2uPg1wnRb_4CVMiVhBWvrBqaJWzzZsaNqcALj-YcvpCAeQ-yChtqB5F014rnLUjwnvt7q4abG2oev2hhUxDT5XXCyGS6ixTRx-6Q69PzSFaIrsPazJIcFBm7ps1gP3Lhh-2v28HSx2m30vqSVbbHajD6LEbHy7HKCsTBO87nhmezx7OvMCW5_lTJdcyKWFWyjkM',
+    image: 'https://www.home-accessories.gr/wp-content/uploads/2023/04/07_CLASSIC_OAK-4-768x597.jpg',
   },
   {
     title: 'MDF Acoustic Panel',
     id: 'acoustic-panel',
     description: 'Slatted acoustic panels that combine stunning aesthetics with professional sound absorption.',
     icon: 'volume_off',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDVY6P9Mt1wn5Uu1K9yyOgFpalERUckrAyLuDZi03FpHDG-Y7hmJtpobi-_Bq-iPdBoAqSg4-GJRpCgI1YdOo01p0AfxzMMiwlsbZndNKGlU5wgRH2ysUAAhR3tsJq1bGsOhJzoNhUhXPChZdhd0FFh94xFN7NeHWjHchoNbdrHlHViV7241c6Re6FFt5X3US6Yw4DQFG1Oi-VldFUkPwskkU80r17p10ISRiWGg3YEyfdeHfM7hVWXqpgm1iwW6qcxvhfKjEKB-rw',
+    image: 'https://tse3.mm.bing.net/th/id/OIP.UTQWmk1JsieyHfM9S6i29wHaHa?rs=1&pid=ImgDetMain&o=7&rm=3',
   },
 ]
 
@@ -196,12 +196,12 @@ function Home() {
 
           <div className='space-y-6'>
             <div className='accent-divider' />
-            <h3 className='text-primary text-sm font-bold uppercase tracking-[0.2em]'>Why APEX?</h3>
+            <h3 className='text-primary text-sm font-bold uppercase tracking-[0.2em]'>Why TRUEBUILD?</h3>
             <h2 className='text-4xl font-black text-primary leading-tight'>
               Quality Materials for<br />Better Spaces
             </h2>
             <p className='text-text-muted text-lg leading-relaxed'>
-              APEX Deck & Design supplies premium decoration materials trusted by builders, architects, and homeowners across Australia. From the eco-friendly elegance of WPC Wall Panels to the acoustic precision of MDF slatted panels, every product is chosen for performance, sustainability, and stunning aesthetics.
+              TRUEBUILD Deck & Design supplies premium decoration materials trusted by builders, architects, and homeowners across Australia. From the eco-friendly elegance of WPC Wall Panels to the acoustic precision of MDF slatted panels, every product is chosen for performance, sustainability, and stunning aesthetics.
             </p>
 
             <div className='grid grid-cols-2 gap-5 pt-2'>
@@ -234,7 +234,7 @@ function Home() {
           <div className='text-center mb-14'>
             <div className='accent-divider mx-auto mb-4' />
             <h2 className='text-primary text-sm font-bold uppercase tracking-[0.2em] mb-2'>Our Advantage</h2>
-            <h3 className='text-4xl font-black text-primary'>Why Professionals Choose APEX</h3>
+            <h3 className='text-4xl font-black text-primary'>Why Professionals Choose TRUEBUILD</h3>
           </div>
 
           <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>

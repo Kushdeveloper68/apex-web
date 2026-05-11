@@ -64,7 +64,7 @@ function ServiceComponent({ productId }) {
                 <div className='absolute -inset-2 bg-accent/15 rounded-xl blur-xl group-hover:bg-accent/25 transition-all duration-500' />
                 <div
                   className='relative w-full aspect-[4/3] bg-center bg-no-repeat bg-cover rounded-xl shadow-product'
-                  style={{ backgroundImage: `url('${product.heroImage}')` }}
+                  style={{ backgroundImage: `url('${product.cardImage}')` }}
                 />
               </div>
             </div>
@@ -118,8 +118,8 @@ function ServiceComponent({ productId }) {
               {product.variants.map((variant, i) => (
                 <div key={i} className='bg-white rounded-xl border border-border-light p-5 hover:border-accent/40 hover:shadow-card transition-all'>
                   {/* Colour swatch placeholder */}
-                  <div className='w-full h-24 rounded-lg bg-gradient-to-br from-surface to-border-light mb-4 flex items-center justify-center'>
-                    <span className='material-symbols-outlined text-text-muted/40 text-3xl'>texture</span>
+                  <div className='w-full h-34 rounded-lg bg-gradient-to-br from-surface to-border-light mb-4 flex items-center justify-center'>
+                   <img src={variant.cardImage} alt={variant.name} className='w-full h-full object-cover' />
                   </div>
                   <p className='text-[10px] text-accent font-bold uppercase tracking-widest mb-1'>{variant.code}</p>
                   <h4 className='text-primary font-bold text-sm'>{variant.name}</h4>

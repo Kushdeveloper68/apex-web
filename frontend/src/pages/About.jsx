@@ -75,7 +75,7 @@ function About() {
               Premium Materials.<br />Lasting Results.
             </h1>
             <p className='text-white/85 text-lg leading-relaxed max-w-xl mx-auto mb-8'>
-              APEX Deck & Design is Australia's trusted supplier of premium decoration materials — bringing professional-grade wall panels, cladding, and acoustic solutions to residential and commercial spaces.
+              TRUEBUILD Deck & Design is Australia's trusted supplier of premium decoration materials — bringing professional-grade wall panels, cladding, and acoustic solutions to residential and commercial spaces.
             </p>
             <Link to='/services' className='inline-flex items-center gap-2 px-7 py-3.5 bg-accent text-white rounded-xl font-bold text-sm hover:bg-accent-light transition-all'>
               <span className='material-symbols-outlined text-base'>category</span>
@@ -91,16 +91,16 @@ function About() {
           <div className='accent-divider' />
           <h3 className='text-accent text-sm font-bold uppercase tracking-widest'>Our Heritage</h3>
           <h2 className='text-4xl font-black text-primary leading-tight'>
-            About APEX<br />Deck & Design
+            About TRUEBUILD<br />Deck & Design
           </h2>
           <p className='text-text-muted text-lg leading-relaxed'>
-            APEX Deck & Design was founded on a simple belief: Australian homes and commercial spaces deserve access to the same premium decoration materials used by the world's top architects and designers — without the traditional import complexity.
+            TRUEBUILD Deck & Design was founded on a simple belief: Australian homes and commercial spaces deserve access to the same premium decoration materials used by the world's top architects and designers — without the traditional import complexity.
           </p>
           <p className='text-text-muted text-lg leading-relaxed'>
             We supply a curated range of high-performance products including PVC Marble Sheets, WPC Wall and Outdoor Panels, PS architectural panels, and MDF Acoustic Panels. Every product in our range is selected for quality, sustainability credentials, and ease of installation.
           </p>
           <p className='text-text-muted text-lg leading-relaxed'>
-            Whether you're a builder looking for reliable cladding solutions, an architect sourcing acoustic materials for a commercial fitout, or a homeowner wanting to transform a bathroom with marble-look panels — APEX has the product and the expertise to make it happen.
+            Whether you're a builder looking for reliable cladding solutions, an architect sourcing acoustic materials for a commercial fitout, or a homeowner wanting to transform a bathroom with marble-look panels — TRUEBUILD has the product and the expertise to make it happen.
           </p>
         </div>
 
@@ -221,7 +221,7 @@ function About() {
               Ready to start your project?
             </h2>
             <p className='text-white/70 text-base max-w-xl mx-auto'>
-              Join hundreds of builders, architects, and homeowners who have transformed their spaces with APEX premium materials.
+              Join hundreds of builders, architects, and homeowners who have transformed their spaces with TRUEBUILD premium materials.
             </p>
             <div className='flex flex-col sm:flex-row gap-4 justify-center pt-3'>
               <Link to='/contact' className='px-8 py-4 bg-accent text-white rounded-xl font-bold hover:bg-accent-light transition-all'>

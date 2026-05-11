@@ -8,8 +8,8 @@
     "description": "PVC Marble Sheet is an eco-friendly decorative panel primarily made of PVC resin with a high-precision marble pattern formed through UV surface treatment. It features lightweight, waterproof, moisture-resistant, flame-retardant properties, and quick installation, making it widely used for interior wall decoration such as bathrooms, kitchens, and background walls — as an ideal alternative to natural marble.",
     "size": "1220 × 2800 × 3mm",
     "weight": "21 kg per sheet",
-    "heroImage": "/src/assets/images/pvc-marble-hero.jpg",
-    "cardImage": "/src/assets/images/pvc-marble-card.jpg",
+    "heroImage": "https://witopdecor.com/wp-content/uploads/2025/09/d86394c3-1715-4318-a8b2-360eb3eaea3d.webp",
+    "cardImage": "https://tse1.mm.bing.net/th/id/OIP.s0FtaEA8EO3KLvSCWYv6KQHaHa?w=1000&h=1000&rs=1&pid=ImgDetMain&o=7&rm=3",
     "features": [
       {
         "icon": "water_drop",
@@ -46,21 +46,25 @@
       {
         "code": "AW23-001",
         "name": "Calacatta White",
+        "cardImage":"/PVC-MARBLE-AW23-001.png",
         "description": "Classic white with subtle grey veining"
       },
       {
         "code": "AW23-015",
         "name": "Gold Veined Marble",
+        "cardImage":"/PVC-MARBLE-AW23-015.jpg",
         "description": "White base with dramatic gold veining"
       },
       {
         "code": "AW23-2460",
         "name": "Arabescato White",
+        "cardImage":"/PVC-MARBLE-AW23-2460.png",
         "description": "White marble with intricate grey patterns"
       },
       {
         "code": "AW-307C",
         "name": "Grey Cloud Marble",
+        "cardImage":"/PVC-MARBLE-AW-307C.jpg",
         "description": "Deep grey smoky marble finish"
       }
     ],
@@ -88,8 +92,8 @@
     "size": "168 × 24 × 2900mm",
     "weight": "2.465 kg/pcs",
     "packingDetails": "14 pcs/carton",
-    "heroImage": "/src/assets/images/wpc-wall-hero.jpg",
-    "cardImage": "/src/assets/images/wpc-wall-card.jpg",
+    "heroImage": "https://www.coowinwpc.com/wp-content/uploads/2024/03/acoustic-wall-panels-1.jpg",
+    "cardImage": "https://images.surferseo.art/bc635929-2887-4b7e-8f98-ce86a24b27e0.jpeg",
     "features": [
       {
         "icon": "pest_control",
@@ -116,21 +120,25 @@
       {
         "code": "AW-009",
         "name": "Dark Walnut",
+        "cardImage":"/WPC-WALL-AW-009.png",
         "description": "Rich deep walnut tone"
       },
       {
         "code": "AW-054",
         "name": "Teak Brown",
+        "cardImage":"/WPC-WALL-AW-054.png",
         "description": "Warm natural teak finish"
       },
       {
         "code": "AW-119",
         "name": "Charcoal Black",
+        "cardImage":"/WPC-WALL-AW-119.png",
         "description": "Bold charcoal statement"
       },
       {
         "code": "AW-333",
         "name": "Ash White",
+        "cardImage":"/WPC-WALL-AW-333.png",
         "description": "Clean contemporary ash white"
       }
     ],
@@ -139,6 +147,7 @@
         "code": "AWPC-2525",
         "name": "25×25mm Corner Trim",
         "size": "25×25×2900mm",
+        
         "description": "Matching colour trim for clean corners"
       },
       {
@@ -171,8 +180,8 @@
     "size": "220 × 26 × 2000 / 2900 / 3600mm",
     "weight": "6.96 kg/pcs",
     "packingDetails": "4 pcs/carton",
-    "heroImage": "/src/assets/images/wpc-outdoor-hero.jpg",
-    "cardImage": "/src/assets/images/wpc-outdoor-card.jpg",
+    "heroImage": "https://theplasticsheets.com/wp-content/uploads/2024/09/WPC-Wall-Panels-2-1024x576.jpg",
+    "cardImage": "https://shanghaiwpc.com/wp-content/uploads/2019/06/wall-board-2.jpg",
     "features": [
       {
         "icon": "pest_control",
@@ -209,26 +218,31 @@
       {
         "code": "AWO-H1",
         "name": "Ash Grey",
+        "cardImage":"/WPC-OUTDOOR-AWO-H1.png",
         "description": "Modern ash grey tone"
       },
       {
         "code": "AWO-H5",
         "name": "Teak + Black",
+        "cardImage":"/WPC-OUTDOOR-AWO-H5.png",
         "description": "Two-tone teak and black contrast"
       },
       {
         "code": "AWO-H8",
         "name": "Rosewood",
+        "cardImage":"/WPC-OUTDOOR-AWO-H8.png",
         "description": "Warm rosewood finish"
       },
       {
         "code": "AWO-H10",
         "name": "Charcoal Black",
+        "cardImage":"/WPC-OUTDOOR-AWO-H10.png",
         "description": "Deep charcoal exterior finish"
       },
       {
         "code": "AWO-H11",
         "name": "Light Beige",
+        "cardImage":"/WPC-OUTDOOR-AWO-H11.png",
         "description": "Natural light beige neutral"
       }
     ],
@@ -262,8 +276,8 @@
     "shortDescription": "Lightweight, thermally insulating, and sound-absorbing polystyrene panels in multiple architectural profiles for interior applications.",
     "description": "PS wallboard is a new type of architectural decorative panel made primarily from polystyrene resin through extrusion or moulding processes. It is an ideal wall material in modern architecture — possessing lightweight and high strength, thermal insulation, sound insulation and noise reduction, waterproofing and moisture resistance. Its comprehensive performance far exceeds that of traditional panels.",
     "size": "Multiple profiles — widths from 130mm to 310mm, all at 2900mm length",
-    "heroImage": "/src/assets/images/ps-panel-hero.jpg",
-    "cardImage": "/src/assets/images/ps-panel-card.jpg",
+    "heroImage": "https://tse3.mm.bing.net/th/id/OIP.UJU0JPm7YWNsu9WV8CU9qAHaFj?rs=1&pid=ImgDetMain&o=7&rm=3",
+    "cardImage": "https://home-space.me/wp-content/uploads/2023/07/11.png",
     "features": [
       {
         "icon": "compress",
@@ -290,6 +304,7 @@
       {
         "code": "APS-033",
         "name": "Linear Groove 150",
+        "cardImage":"/PS-WALL-APS-033.png",
         "size": "150×12×2900mm",
         "weight": "1.65 kg/pcs",
         "packing": "14 pcs/carton",
@@ -298,6 +313,7 @@
       {
         "code": "APS-055",
         "name": "Ripple Profile 160",
+        "cardImage":"/PS-WALL-APS-055.png",
         "size": "160×12×2900mm",
         "weight": "1.45 kg/pcs",
         "packing": "18 pcs/carton",
@@ -306,6 +322,7 @@
       {
         "code": "APS-048",
         "name": "Deep Channel 207",
+        "cardImage":"/PS-WALL-APS-048.png",
         "size": "207×21×2900mm",
         "weight": "2.8 kg/pcs",
         "packing": "14 pcs/carton",
@@ -314,6 +331,7 @@
       {
         "code": "APS-024",
         "name": "Slim Slat 130",
+        "cardImage":"/PS-WALL-APS-024.png",
         "size": "130×12×2900mm",
         "weight": "1.3 kg/pcs",
         "packing": "22 pcs/carton",
@@ -322,6 +340,7 @@
       {
         "code": "APS-059",
         "name": "Wide Flat 310",
+        "cardImage":"/PS-WALL-APS-059.png",
         "size": "310×7×2900mm",
         "weight": "2.3 kg/pcs",
         "packing": "12 pcs/carton",
@@ -330,6 +349,7 @@
       {
         "code": "APS-039",
         "name": "Stepped Groove 180",
+        "cardImage":"/PS-WALL-APS-039.png",
         "size": "180×20×2900mm",
         "weight": "2.0 kg/pcs",
         "packing": "16 pcs/carton",
@@ -354,8 +374,8 @@
     "size": "600 × 21 × 3000mm",
     "weight": "13.6 kg/pcs",
     "packingDetails": "2 pcs/carton — Package: 3030×630×56mm",
-    "heroImage": "/src/assets/images/acoustic-hero.jpg",
-    "cardImage": "/src/assets/images/acoustic-card.jpg",
+    "heroImage": "https://vipclassicmoulding.com/wp-content/uploads/2024/04/Wood-slat-panels-featured-blog-4.jpeg",
+    "cardImage": "https://www.thewoodveneerhub.com/cdn/shop/files/the-wood-veneer-hub-ultraflex-oak-flexible-lightweight-acoustic-wood-wall-panels-original-slatpanel-44183442325782_1470x1470.jpg?v=1712575929",
     "features": [
       {
         "icon": "volume_off",
@@ -392,21 +412,25 @@
       {
         "code": "JM1114-MBW-H361",
         "name": "Natural Oak on Black",
+        "cardImage":"/MDF-PANEL-1.jpg",
         "description": "Warm natural oak slats on black backing"
       },
       {
         "code": "JM1114-MBW-H362",
         "name": "Charcoal Mono",
+        "cardImage":"/MDF-PANEL-2.jpg",
         "description": "Deep charcoal uniform finish"
       },
       {
         "code": "JM1114-MBW-H363",
         "name": "Warm Grey",
+        "cardImage":"/MDF-PANEL-4.jpg",
         "description": "Contemporary warm grey tone"
       },
       {
         "code": "JM1114-MBW-08WV",
         "name": "Premium Walnut Wave",
+        "cardImage":"/MDF-PANEL-3.jpg",
         "description": "Rich walnut with wave slatting — premium grade"
       }
     ],
