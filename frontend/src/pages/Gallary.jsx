@@ -1,92 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-
-const ALL_PROJECTS = [
-  {
-    id: 1,
-    category: 'PVC Marble Sheet',
-    tag: 'Indoor',
-    title: 'Calacatta White Bathroom Feature Wall',
-    desc: 'Full-height PVC marble sheet installation in a master ensuite — seamless, waterproof and stunning.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBw4UQsgEBvuIZ8Vm7QQ35jkvdA8aGarXZtIkT6SmhodGWOeeBQxUsk0sYc0LfzM5xxAXnTxKTu41R7IbiRum_kMwcLCQldUoyWy5xeACmCTDMiMghFru9fZfOhZK2koQ5kp1DHq9Onww8qsbNpF_8-rAzbRqHVPEU4KQloomeWvM_wRmx5MReJ5L_v1g-7Lzdp9qicqz_BgAem2i88t5YRSJy3aAEt4gZke-K0tfQdxseN1N_Z18ypAevSzJj2xNBirsPt0SIcM5c',
-    productId: 'pvc-marble-sheet',
-    featured: true,
-  },
-  {
-    id: 2,
-    category: 'WPC Outdoor Panel',
-    tag: 'Outdoor',
-    title: 'Modern Residential Facade — Ash Grey',
-    desc: 'Co-extruded WPC outdoor cladding wrapping a contemporary home exterior — fade-free and maintenance-free.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCl51Z08CevNeDMASjB-pQOR63yvmdYJzrYX_EJkQnQ_MgwAcY7r2Qx_hv5oehUi-h9QY-tUrksj9xntV9pQDRZhAgVZrCCk8HpjFVDCIBBN7znYosafW5L99TEpHj_YngW6k6ZB_AH0Q6JsCN-QJtoQET6lzjoNfhG0VlToMznXqbVbzinfNm4zF9Iuhjh5GH7BCwb5bwkSATbz9OdZP1tPGT0RK9gFdfmLJpAvi2pjm8xJjUkZJWLwr1Ew2hqtPnGMTk9OPpPLgw',
-    productId: 'wpc-outdoor-panel',
-    featured: true,
-  },
-  {
-    id: 3,
-    category: 'WPC Wall Panel',
-    tag: 'Indoor',
-    title: 'Dark Walnut Living Room Feature Wall',
-    desc: 'WPC wall panels in dark walnut finish — notch-joint installation with zero visible fixings.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB2OjFi75srM9T55OfsCB3p9n0uFMFE63S9S0w_WQgnIkqAXomtGePyHXn9d_sYmiTG_6ADTkxxeN4X_mem88TnB_5K-TwbZ41X3bMT2yrmkSBkjk5HJVn3Nqit28A27q56YuNonHZjxL2wZ9vPlmG_5z-xKjbynEr35MIsNYFm7qwZ8O26GbXniJrZOccFAl118xyIj6gyMx9U3srtbQuhIrY_tdxsOFE7Cpk5t-YWhZv6uWWqwcDg6mTFx4MuwvT68zsRdMC_EQ8',
-    productId: 'wpc-wall-panel',
-  },
-  {
-    id: 4,
-    category: 'MDF Acoustic Panel',
-    tag: 'Acoustic',
-    title: 'Home Theatre Acoustic Wall — Natural Oak',
-    desc: 'MDF slatted acoustic panels deliver professional noise control without compromising the interior aesthetic.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDVY6P9Mt1wn5Uu1K9yyOgFpalERUckrAyLuDZi03FpHDG-Y7hmJtpobi-_Bq-iPdBoAqSg4-GJRpCgI1YdOo01p0AfxzMMiwlsbZndNKGlU5wgRH2ysUAAhR3tsJq1bGsOhJzoNhUhXPChZdhd0FFh94xFN7NeHWjHchoNbdrHlHViV7241c6Re6FFt5X3US6Yw4DQFG1Oi-VldFUkPwskkU80r17p10ISRiWGg3YEyfdeHfM7hVWXqpgm1iwW6qcxvhfKjEKB-rw',
-    productId: 'acoustic-panel',
-    featured: true,
-  },
-  {
-    id: 5,
-    category: 'PS Panel',
-    tag: 'Indoor',
-    title: 'Linear Groove PS Panel — Office Interior',
-    desc: 'PS architectural panels in a stepped groove profile create a striking commercial office feature wall.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBimconrjzFo0N77I1uWGBfkmcgkwWP9LFHCLuEdMRz8APmVdqXL_oPTZRMJ06g65lMzTa8fDZu2uPg1wnRb_4CVMiVhBWvrBqaJWzzZsaNqcALj-YcvpCAeQ-yChtqB5F014rnLUjwnvt7q4abG2oev2hhUxDT5XXCyGS6ixTRx-6Q69PzSFaIrsPazJIcFBm7ps1gP3Lhh-2v28HSx2m30vqSVbbHajD6LEbHy7HKCsTBO87nhmezx7OvMCW5_lTJdcyKWFWyjkM',
-    productId: 'ps-panel',
-  },
-  {
-    id: 6,
-    category: 'WPC Outdoor Panel',
-    tag: 'Outdoor',
-    title: 'Garden Pergola Side Panel — Teak + Black',
-    desc: 'Two-tone WPC outdoor panels used as pergola infill — weather-resistant and visually bold.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAbxO7f3EsLSlu0bfN2J7EByUhv-kYzQAdCKRakSacenzhiYHaTWkTDF_80Qqfz_RtgV5PDZlXONGrjEQMZ2bHf_K196L-YSUUxwjSSny84HSvuW7YpXbjo6VSOhzv9rJ7pQL_Cvs1QsN4RokMx3Phutm-BaY9Z-wSIPNL4IDaEVJ2MBia4tfkyHRpnf7rlTpVz089IZX4OIy64NX4XSIOoug2WvBvaid71uT6NQoEmLd-uD8ygfzPgtnXEa3NHivbisVw2t0t54b4',
-    productId: 'wpc-outdoor-panel',
-  },
-  {
-    id: 7,
-    category: 'PVC Marble Sheet',
-    tag: 'Indoor',
-    title: 'Gold Veined Marble Kitchen Splashback',
-    desc: 'PVC marble panels used as a kitchen splashback — fully waterproof and stunning alternative to real stone.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDEJ8XD697CGfi-UeTfNcSs05i8WVArpvTjDKUP0OBda9KIGETBbe_hQJcHyVE9Vjk30tf5eTYL_SZf_zCkl-Cdna4AbJ8ihheKpugwCeHnFEz7eMerhaqBjvTzVAQl4QpFILdBbmvGDaxvLoeA1qVautDAg3bio-AMrYKhV8ooc2USbQ8CILhxYn9o5NuTbwlgGRP5frar_VVbPqlfphWHZ5nltEKq35n4tanfY8uoWoJgqXc_OqgxU2NnxHjhUwApks6rVZyXsd8',
-    productId: 'pvc-marble-sheet',
-  },
-  {
-    id: 8,
-    category: 'WPC Wall Panel',
-    tag: 'Indoor',
-    title: 'Ash White Bedroom Headboard Wall',
-    desc: 'Elegant ash white WPC wall panels create a textured, warm focal point behind the bed.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDQ8-bV5h2LoTF3FTDqCL67IicWJ4pVZ_4fr_H7dF7Sbo7sMoosJhp5AUzEJRd07d1C0fQVnM0OfwIJ6i7S74SI1px_qUb5-l3W9bmyPvofekqbHdvZfQi24nhNFoUSrBEY6Gx5Q8YkQHQ8F84oFt_9UfbBquELhnYu_HNflLFBn_xheeJMmqVBcR-JNESog3PJj5kzYcSffFJqQub15jXnpyd-j-ssUVmkdxIoJlJ9U3K3VvgtBuphPkrv11pWG2d2UT27oLfpC40',
-    productId: 'wpc-wall-panel',
-  },
-  {
-    id: 9,
-    category: 'MDF Acoustic Panel',
-    tag: 'Acoustic',
-    title: 'Restaurant Acoustic Ceiling — Walnut Wave',
-    desc: 'Premium walnut wave acoustic panels installed across a busy restaurant ceiling — dramatic and functional.',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCgkeOnjeyzq8GaJULzwSfmsJjBb9-M5dyw4KAfh_WR4BfIZba20JAMnW8xC6vDKo7v1mn3HcVeFuqqb4UHhVcqwDgTKvvPQQtexw5wdl7ayOpD7AhCna3IFfFylGAjKy8TSZsMAhbTUjLxwN0UFDjylN3Bn8B984uYh96fnXB2-WytJ7GIj1VGuF2vEeEH_lLnbyNDvXcOF16drwFDvJCnM-OVs0QOUa-oWPm6o6Gp0vTrNptd1sSlFfL4dkc6LxK1xWfabBQcRPY',
-    productId: 'acoustic-panel',
-  },
-]
+import galleryProjects from '../utilities/gallery.json'
+import brochurePdf from '../assets/pdfs/TrueBuild-brochure.pdf'
 
 const FILTERS = ['All', 'Indoor', 'Outdoor', 'Acoustic']
 
@@ -99,7 +14,7 @@ const TAG_COLORS = {
 function Gallary() {
   const [activeFilter, setActiveFilter] = useState('All')
 
-  const filtered = ALL_PROJECTS.filter(p => activeFilter === 'All' || p.tag === activeFilter)
+  const filtered = galleryProjects.filter(p => activeFilter === 'All' || p.tag === activeFilter)
 
   return (
     <main>
@@ -130,7 +45,7 @@ function Gallary() {
               {f}
               {f !== 'All' && (
                 <span className='ml-1.5 text-xs opacity-60'>
-                  ({ALL_PROJECTS.filter(p => p.tag === f).length})
+                  ({galleryProjects.filter(p => p.tag === f).length})
                 </span>
               )}
             </button>
@@ -144,7 +59,10 @@ function Gallary() {
               <img
                 alt={project.title}
                 src={project.image}
-                className='w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105'
+                loading="lazy"
+                decoding="async"
+                fetchPriority="low"
+                className='w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105 block'
               />
               <div className='absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6'>
                 <div className='flex items-center gap-2 mb-2'>
@@ -191,6 +109,14 @@ function Gallary() {
             <Link to='/services' className='px-8 py-4 rounded-xl border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white transition-all'>
               Browse All Products
             </Link>
+            <a
+              href={brochurePdf}
+              download='TRUEBUILD-Brochure.pdf'
+              className='flex items-center justify-center gap-2 px-8 py-4 rounded-xl border-2 border-accent text-accent font-bold hover:bg-accent hover:text-white transition-all'
+            >
+              <span className='material-symbols-outlined text-base'>download</span>
+              Download Brochure
+            </a>
           </div>
         </div>
       </section>

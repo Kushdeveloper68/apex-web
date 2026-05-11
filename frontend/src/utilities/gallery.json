@@ -1,0 +1,105 @@
+[
+	{
+		"id": 1,
+		"category": "PVC Marble Sheet",
+		"tag": "Indoor",
+		"title": "Calacatta White Bathroom Feature Wall",
+		"desc": "Full-height PVC marble sheet installation in a master ensuite — seamless, waterproof and stunning.",
+		"image": "/gallery-image/PVC-MARBLE-AW23-001.png",
+		"productId": "pvc-marble-sheet",
+		"featured": true
+	},
+	{
+		"id": 2,
+		"category": "WPC Outdoor Panel",
+		"tag": "Outdoor",
+		"title": "Modern Residential Facade — Ash Grey",
+		"desc": "Co-extruded WPC outdoor cladding wrapping a contemporary home exterior — fade-free and maintenance-free.",
+		"image": "/gallery-image/WPC-OUTDOOR-AWO-H1.png",
+		"productId": "wpc-outdoor-panel",
+		"featured": true
+	},
+	{
+		"id": 3,
+		"category": "WPC Wall Panel",
+		"tag": "Indoor",
+		"title": "Dark Walnut Living Room Feature Wall",
+		"desc": "WPC wall panels in dark walnut finish — notch-joint installation with zero visible fixings.",
+		"image": "/gallery-image/WPC-WALL-AW-009.png",
+		"productId": "wpc-wall-panel",
+		"featured": true
+	},
+	{
+		"id": 4,
+		"category": "MDF Acoustic Panel",
+		"tag": "Acoustic",
+		"title": "Home Theatre Acoustic Wall — Natural Oak",
+		"desc": "MDF slatted acoustic panels deliver professional noise control without compromising the interior aesthetic.",
+		"image": "/gallery-image/MDF-PANEL.jpg",
+		"productId": "acoustic-panel",
+		"featured": true
+	},
+	{
+		"id": 5,
+		"category": "PS Panel",
+		"tag": "Indoor",
+		"title": "Linear Groove PS Panel — Office Interior",
+		"desc": "PS architectural panels in a stepped groove profile create a striking commercial office feature wall.",
+		"image": "/gallery-image/PS-WALL-APS-024.png",
+		"productId": "ps-panel"
+	},
+	{
+		"id": 6,
+		"category": "WPC Outdoor Panel",
+		"tag": "Outdoor",
+		"title": "Garden Pergola Side Panel — Teak + Black",
+		"desc": "Two-tone WPC outdoor panels used as pergola infill — weather-resistant and visually bold.",
+		"image": "/gallery-image/WPC-OUTDOOR-AWO-H5.png",
+		"productId": "wpc-outdoor-panel"
+	},
+	{
+		"id": 7,
+		"category": "PVC Marble Sheet",
+		"tag": "Indoor",
+		"title": "Gold Veined Marble Kitchen Splashback",
+		"desc": "PVC marble panels used as a kitchen splashback — fully waterproof and stunning alternative to real stone.",
+		"image": "/gallery-image/PVC-MARBLE-AW23-015.jpg",
+		"productId": "pvc-marble-sheet"
+	},
+	{
+		"id": 8,
+		"category": "WPC Wall Panel",
+		"tag": "Indoor",
+		"title": "Ash White Bedroom Headboard Wall",
+		"desc": "Elegant ash white WPC wall panels create a textured, warm focal point behind the bed.",
+		"image": "/gallery-image/WPC-WALL-AW-333.png",
+		"productId": "wpc-wall-panel"
+	},
+	{
+		"id": 9,
+		"category": "MDF Acoustic Panel",
+		"tag": "Acoustic",
+		"title": "Restaurant Acoustic Ceiling — Walnut Wave",
+		"desc": "Premium walnut wave acoustic panels installed across a busy restaurant ceiling — dramatic and functional.",
+		"image": "/gallery-image/MDF-PANEL-4.jpg",
+		"productId": "acoustic-panel"
+	},
+	{
+		"id": 10,
+		"category": "MDF Acoustic Panel",
+		"tag": "Acoustic",
+		"title": "Restaurant Acoustic Ceiling — Walnut Wave",
+		"desc": "Premium walnut wave acoustic panels installed across a busy restaurant ceiling — dramatic and functional.",
+		"image": "/gallery-image/MDF-PANEL-4.jpg",
+		"productId": "acoustic-panel"
+	},
+	{
+		"id": 11,
+		"category": "MDF Acoustic Panel",
+		"tag": "Acoustic",
+		"title": "Restaurant Acoustic Ceiling — Walnut Wave",
+		"desc": "Premium walnut wave acoustic panels installed across a busy restaurant ceiling — dramatic and functional.",
+		"image": "/gallery-image/MDF-PANEL-4.jpg",
+		"productId": "acoustic-panel"
+	}
+]

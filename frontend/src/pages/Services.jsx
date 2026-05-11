@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import products from '../utilities/products.json'
+import brochurePdf from '../assets/pdfs/TrueBuild-brochure.pdf'
 
 
 const PRODUCT_IMAGES = {
@@ -188,6 +189,14 @@ function Services() {
               <Link to='/gallary' className='px-8 py-4 bg-white/10 border border-white/20 text-white rounded-xl font-bold hover:bg-white/20 transition-all'>
                 View Portfolio 
               </Link>
+                <a
+                  href={brochurePdf}
+                  download='TRUEBUILD-Brochure.pdf'
+                  className='px-8 py-4 bg-white text-primary rounded-xl font-bold hover:bg-surface transition-all inline-flex items-center justify-center gap-2'
+                >
+                  <span className='material-symbols-outlined text-base text-accent'>download</span>
+                  Download Brochure
+                </a>
             </div>
         </div>
       </section>

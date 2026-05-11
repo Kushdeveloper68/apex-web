@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import products from '../utilities/products.json'
+import galleryProjects from '../utilities/gallery.json'
+import brochurePdf from '../assets/pdfs/TrueBuild-brochure.pdf'
 
 /* ─── Hero product categories for service cards ─── */
 const HERO_SERVICES = [
@@ -50,6 +51,8 @@ const WHY_US = [
   { icon: 'water_drop', title: 'Waterproof & Durable', desc: 'Resistant to moisture, humidity, and the elements — built to last decades.' },
   { icon: 'support_agent', title: 'Expert Support', desc: 'Our team provides technical guidance from product selection through to installation.' },
 ]
+
+const FEATURED_GALLERY = galleryProjects.filter(project => project.featured).slice(0, 4)
 
 function Home() {
   return (
@@ -262,29 +265,34 @@ function Home() {
               <h3 className='text-primary text-sm font-bold uppercase tracking-[0.2em] mb-2'>Portfolio</h3>
               <h2 className='text-4xl font-black text-primary'>Installed Projects</h2>
             </div>
-            <Link to='/gallary' className='text-accent font-bold flex items-center gap-2 border-b border-accent pb-1 hover:gap-4 transition-all shrink-0 text-sm'>
-              View Full Gallery <span className='material-symbols-outlined text-sm'>trending_flat</span>
-            </Link>
+            <div className='flex flex-wrap items-center gap-3'>
+              <a
+                href={brochurePdf}
+                download='TRUEBUILD-Brochure.pdf'
+                className='inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border-light bg-white text-primary text-sm font-bold hover:border-accent/40 hover:text-accent transition-all'
+              >
+                <span className='material-symbols-outlined text-base'>download</span>
+                Download Brochure
+              </a>
+              <Link to='/gallary' className='text-accent font-bold flex items-center gap-2 border-b border-accent pb-1 hover:gap-4 transition-all shrink-0 text-sm'>
+                View Full Gallery <span className='material-symbols-outlined text-sm'>trending_flat</span>
+              </Link>
+            </div>
           </div>
 
           <div className='columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4'>
-            {[
-              { url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAxqe7WC7cuZiFq7rWzJeWYgIhWLpcGG870UY6U7jfar5ZSRELunxgFHsBHg4P99HgIaWU6KakQVjsgBr6Lef4zIHwDJXjhBjFzbmaj-yIv7oz3dzTDV7qb4nkNlm13EE4Z0htOoU-Zp4swkhDlenQwFi_R7XSP0QazBz_oRgCb2ysCnmI4A7h6jwMbFDqVi5vtFHFTw6v-OKzQPFMo_DT-xjQ-se36pFzw5vhN50Ijib5XK-VM0GHRcV3stAsungpMts90hS9OGSM', label: 'WPC Wall Panel — Living Room', cat: 'Interior' },
-              { url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCEFvo0UOC-kGAVLMwoiUx-C7t5jyN5Rc1x_THJ-IvfKYnn6uSwio84ru4Jbzgx6H8hKvC1If6YqCQ35chk5VW_QgElZW_M9mFcMCX0OdyKuuvz6zo0p4Gf9TMydmaVp1jIVGPuYKJRHwzgcjfWu2gFYvHpXbNoTiQz1nG3LHsipTSBOjRFUuNdq6l63XWn23ssiOiEzGxTOBi3zGfIhx2sat6iDDGLrFPrcZ01a-d0XjhaM2Ix3q_QK7YaXIP6mJ9HVu_j0mwVYe4', label: 'WPC Outdoor Panel — Facade', cat: 'Exterior' },
-              { url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBUWsbrFKP-y3vI-0hJSJNsa1hV2YPUJ1Bt50TQWmsvnjYGiDIuF6LI4GIm2Xt6rSxN2clGCoTlq4qjgJRw-o60TYoOLOL2-P085sKKG0LOnzJB8WmbPFkulI8gX1qIlHykjKKwaQYV_YZqmrfln5AK7gl0X8xPxV54msSmIA5x0MhYQgTPek_m57i28u-12pMC3Gba5Og7oTZh24Ofi9VWE1KDEkSYHw3z45HVu8FWwc_UcomKZm313wOHgD19Us9e6CJ8-Ik6IlU', label: 'PS Panel — Commercial', cat: 'Commercial' },
-              { url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAc4AfVGB3Ap470lwun6sVzeqVn2046CVb4qwnP5joDQflNY2iH1ptCdRUihNfYzXZTQ6b32lJUHEn0cGiTP_oJfabtaeFgaADTQrgpUhAVNwbgMcCzD4hRP9cLzgTe778N01IVCnoZ6OPeecWUSRXpCfFOZviOJet3Oy/xxxxxxxx', label: 'PVC Marble Sheet — Bathroom', cat: 'Interior' },
-            ].map((item, i) => (
+            {FEATURED_GALLERY.map((item, i) => (
               <div key={i} className='relative group rounded-xl overflow-hidden shadow-card break-inside-avoid'>
                 <div
                   className='w-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105'
                   style={{
-                    backgroundImage: `url('${item.url}')`,
+                    backgroundImage: `url('${item.image}')`,
                     height: i % 2 === 0 ? '280px' : '220px',
                   }}
                 />
                 <div className='absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-5 text-white'>
-                  <p className='text-[10px] font-bold uppercase tracking-widest text-accent'>{item.cat}</p>
-                  <h5 className='text-sm font-bold mt-1'>{item.label}</h5>
+                  <p className='text-[10px] font-bold uppercase tracking-widest text-accent'>{item.category}</p>
+                  <h5 className='text-sm font-bold mt-1'>{item.title}</h5>
                 </div>
               </div>
             ))}

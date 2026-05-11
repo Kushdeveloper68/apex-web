@@ -5,6 +5,10 @@
   scroll-behavior: smooth;
 }
 
+html, body, #root {
+  height: 100%;
+}
+
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
@@ -31,6 +35,18 @@
   border-color: #C8A165 !important;
   outline: none;
   box-shadow: 0 0 0 2px rgba(200, 161, 101, 0.15);
+}
+
+/* Ensure images in masonry/grid layouts are responsive blocks */
+.masonry-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Slightly smaller divider on very small screens */
+@media (max-width: 420px) {
+  .accent-divider { width: 36px; height: 3px; }
 }
 
 /* Product card hover */

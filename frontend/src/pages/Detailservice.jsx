@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import ServiceComponent from '../components/ServiceComponent'
 import products from '../utilities/products.json'
+import brochurePdf from '../assets/pdfs/TrueBuild-brochure.pdf'
 
 const PRODUCT_IMAGES = {
   'pvc-marble-sheet': 'https://witopdecor.com/wp-content/uploads/2025/09/d86394c3-1715-4318-a8b2-360eb3eaea3d.webp',
@@ -99,6 +100,14 @@ function Detailservice() {
                 <span className='material-symbols-outlined text-base'>request_quote</span>
                 Request a Sample / Quote
               </Link>
+              <a
+                href={brochurePdf}
+                download='TRUEBUILD-Brochure.pdf'
+                className='flex items-center gap-2 px-7 py-3.5 bg-white text-primary rounded-xl font-bold text-sm hover:bg-surface transition-all'
+              >
+                <span className='material-symbols-outlined text-base text-accent'>download</span>
+                Download Brochure
+              </a>
               <Link
                 to='/services'
                 className='flex items-center gap-2 px-7 py-3.5 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-xl font-bold text-sm hover:bg-white/20 transition-all'
