@@ -26,13 +26,13 @@ const CONTACT_INFO = [
   {
     icon: 'call',
     label: 'Call Us',
-    primary: '1300 APEX DECK',
+    primary: '+63 426 426 469 TrueBuild',
     secondary: 'Mon – Fri, 8am – 6pm AEST',
   },
   {
     icon: 'mail',
     label: 'Email Us',
-    primary: 'hello@apexdeckdesign.com.au',
+    primary: 'info@truebuilddeck.com.au',
     secondary: 'We respond within 24 hours',
   },
   {
@@ -88,7 +88,7 @@ function Contact() {
   return (
     <>
       {/* Hero */}
-      <section className='max-w-[1280px] mx-auto px-6 py-8'>
+      <section className='max-w-[1280px] mx-auto px-3 py-8'>
         <div
           className='flex min-h-[380px] flex-col gap-5 bg-cover bg-center rounded-2xl items-start justify-end px-8 pb-12 md:px-12 overflow-hidden shadow-product'
           style={{
@@ -110,7 +110,7 @@ function Contact() {
       </section>
 
       {/* Main Content */}
-      <main className='max-w-[1280px] mx-auto px-6 py-10 pb-16'>
+      <main className='max-w-[1280px] mx-auto px-3 py-10 pb-16'>
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-10'>
 
           {/* Form */}

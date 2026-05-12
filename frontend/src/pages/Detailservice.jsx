@@ -37,7 +37,7 @@ function Detailservice() {
     <div className='w-full overflow-x-hidden'>
 
       {/* Breadcrumb */}
-      <div className='max-w-[1280px] mx-auto px-6 py-4 flex items-center gap-2 text-sm'>
+      <div className='max-w-7xl mx-auto px-3 py-4 flex items-center gap-2 text-sm'>
         <Link to='/' className='text-text-muted hover:text-accent transition-colors font-medium'>Home</Link>
         <span className='text-border-light'>/</span>
         <Link to='/services' className='text-text-muted hover:text-accent transition-colors font-medium'>Products</Link>
@@ -46,9 +46,9 @@ function Detailservice() {
       </div>
 
       {/* Hero Section */}
-      <section className='max-w-[1280px] mx-auto px-6 pb-10'>
+      <section className='max-w-7xl mx-auto px-3 pb-10'>
         <div
-          className='relative flex min-h-[520px] flex-col gap-6 bg-cover bg-center rounded-2xl items-start justify-end px-8 pb-14 md:px-14 overflow-hidden shadow-product'
+          className='relative flex min-h-130 h-auto flex-col gap-6 bg-cover bg-center rounded-2xl items-start justify-end px-8 pb-14 pt-15 md:px-14 overflow-hidden shadow-product'
           style={{
             backgroundImage: `linear-gradient(to top, rgba(28,25,22,0.88) 30%, rgba(28,25,22,0.25) 80%), url('${heroImg}')`,
           }}
@@ -61,7 +61,7 @@ function Detailservice() {
             </span>
           </div>
 
-          <div className='max-w-[700px]'>
+          <div className='max-w-175'>
             <p className='text-accent text-xs font-bold uppercase tracking-widest mb-3'>{product.tagline}</p>
             <h1 className='text-white text-4xl md:text-5xl font-black leading-tight tracking-tight mb-4'>
               {product.category}
@@ -122,7 +122,7 @@ function Detailservice() {
 
       {/* Quick Feature Highlights (above fold summary) */}
       <section className='bg-primary'>
-        <div className='max-w-[1280px] mx-auto px-6 py-6 grid grid-cols-2 sm:grid-cols-4 gap-4'>
+        <div className='max-w-[1280px] mx-auto px-3 py-6 grid grid-cols-2 sm:grid-cols-4 gap-4'>
           {product.features.slice(0, 4).map((f, i) => (
             <div key={i} className='flex items-center gap-3 p-3'>
               <div className='w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center shrink-0'>
@@ -140,7 +140,7 @@ function Detailservice() {
       {/* Related Products */}
       {relatedProducts.length > 0 && (
         <section className='py-16 bg-white'>
-          <div className='max-w-[1280px] mx-auto px-6'>
+          <div className='max-w-[1280px] mx-auto px-3'>
             <div className='accent-divider mb-4' />
             <div className='flex items-end justify-between mb-10'>
               <div>
@@ -185,7 +185,7 @@ function Detailservice() {
       )}
 
       {/* CTA Section */}
-      <section className='py-20 px-6 bg-surface'>
+      <section className='py-20 px-3 bg-surface'>
         <div className='max-w-[1100px] mx-auto bg-primary rounded-2xl p-10 md:p-14 text-center relative overflow-hidden shadow-product'>
           <div className='absolute -top-16 -right-16 w-48 h-48 bg-accent/10 rounded-full blur-3xl' />
           <div className='absolute -bottom-16 -left-16 w-48 h-48 bg-black/20 rounded-full blur-3xl' />

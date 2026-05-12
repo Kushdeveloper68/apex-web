@@ -33,7 +33,7 @@ function Services() {
     <>
       {/* Hero */}
       <section className='relative'>
-        <div className='max-w-[1280px] mx-auto px-6 py-8'>
+        <div className='max-w-[1280px] mx-auto px-3 py-8'>
           <div
             className='flex min-h-[420px] flex-col gap-6 bg-cover bg-center rounded-2xl items-start justify-end px-10 pb-14 shadow-product overflow-hidden'
             style={{
@@ -57,7 +57,7 @@ function Services() {
 
       {/* Filter Bar */}
       <div className='sticky top-[65px] z-30 bg-white/95 backdrop-blur-md border-b border-border-light'>
-        <div className='max-w-[1280px] mx-auto px-6 py-3 flex items-center gap-3 overflow-x-auto'>
+        <div className='max-w-[1280px] mx-auto px-3 py-3 flex items-center gap-3 overflow-x-auto'>
           {CATEGORIES.map(cat => (
             <button
               key={cat}
@@ -78,7 +78,7 @@ function Services() {
       </div>
 
       {/* Products Grid */}
-      <main className='max-w-[1280px] mx-auto px-6 py-16'>
+      <main className='max-w-[1280px] mx-auto px-3 py-16'>
         <div className='flex flex-col gap-20'>
           {filtered.map((product, index) => (
             <div key={product.id} className='flex flex-col lg:flex-row items-center gap-12 lg:gap-16'>
@@ -174,7 +174,7 @@ function Services() {
 
       {/* CTA Section */}
       <section className='bg-primary py-20'>
-        <div className='max-w-[1280px] mx-auto px-6 text-center flex flex-col items-center gap-7'>
+        <div className='max-w-[1280px] mx-auto px-3 text-center flex flex-col items-center gap-7'>
           <div className='accent-divider mx-auto' />
           <h2 className='text-white text-4xl font-black leading-tight'>
             Ready to transform your space?

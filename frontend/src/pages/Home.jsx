@@ -69,7 +69,7 @@ function Home() {
           />
         </div>
 
-        <div className='relative z-10 max-w-[1280px] mx-auto px-6 w-full py-20'>
+        <div className='relative z-10 max-w-[1280px] mx-auto px-3 w-full py-20'>
           <div className='max-w-2xl'>
             <div className='inline-flex items-center gap-2 bg-accent/20 border border-accent/30 px-4 py-1.5 rounded-full text-accent text-xs font-bold uppercase tracking-widest mb-6'>
               <span className='w-1.5 h-1.5 bg-accent rounded-full animate-pulse' />
@@ -115,7 +115,7 @@ function Home() {
 
       {/* ─── PRODUCTS OVERVIEW ─── */}
       <section className='py-24 bg-white'>
-        <div className='max-w-[1280px] mx-auto px-6'>
+        <div className='max-w-[1280px] mx-auto px-3'>
           <div className='flex flex-col md:flex-row justify-between items-end mb-14 gap-6'>
             <div>
               <div className='accent-divider mb-4' />
@@ -178,7 +178,7 @@ function Home() {
 
       {/* ─── BRAND / ABOUT PREVIEW ─── */}
       <section className='py-24 bg-surface'>
-        <div className='max-w-[1280px] mx-auto px-6 grid md:grid-cols-2 gap-16 items-center'>
+        <div className='max-w-[1280px] mx-auto px-3 grid md:grid-cols-2 gap-16 items-center'>
           <div className='relative'>
             <div
               className='aspect-[4/5] rounded-2xl overflow-hidden shadow-product'
@@ -233,7 +233,7 @@ function Home() {
 
       {/* ─── WHY CHOOSE US ─── */}
       <section className='py-24 bg-white'>
-        <div className='max-w-[1280px] mx-auto px-6'>
+        <div className='max-w-[1280px] mx-auto px-3'>
           <div className='text-center mb-14'>
             <div className='accent-divider mx-auto mb-4' />
             <h2 className='text-primary text-sm font-bold uppercase tracking-[0.2em] mb-2'>Our Advantage</h2>
@@ -258,7 +258,7 @@ function Home() {
 
       {/* ─── GALLERY PREVIEW ─── */}
       <section className='py-24 bg-surface'>
-        <div className='max-w-[1280px] mx-auto px-6'>
+        <div className='max-w-[1280px] mx-auto px-3'>
           <div className='flex flex-col md:flex-row justify-between items-end mb-12 gap-6'>
             <div>
               <div className='accent-divider mb-4' />
@@ -301,7 +301,7 @@ function Home() {
       </section>
 
       {/* ─── FINAL CTA ─── */}
-      <section className='py-20 px-6'>
+      <section className='py-20 px-3'>
         <div className='max-w-[1100px] mx-auto rounded-2xl bg-primary text-white p-12 md:p-16 text-center relative overflow-hidden shadow-product'>
           <div className='absolute top-0 right-0 -translate-y-1/3 translate-x-1/3 w-72 h-72 bg-accent/10 rounded-full blur-3xl' />
           <div className='relative z-10 space-y-5'>

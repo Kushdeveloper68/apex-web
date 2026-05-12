@@ -19,7 +19,7 @@ function Gallary() {
   return (
     <main>
       {/* Page Header */}
-      <section className='max-w-[1280px] mx-auto px-6 py-12'>
+      <section className='max-w-[1280px] mx-auto px-3 py-12'>
         <div className='flex flex-col gap-3 text-center mb-10'>
           <div className='accent-divider mx-auto' />
           <h1 className='text-primary text-5xl font-black leading-tight tracking-tight'>
@@ -92,7 +92,7 @@ function Gallary() {
       </section>
 
       {/* CTA Section */}
-      <section className='max-w-[1280px] mx-auto px-6 pb-16'>
+      <section className='max-w-[1280px] mx-auto px-3 pb-16'>
         <div className='bg-white rounded-2xl p-8 md:p-14 text-center border border-border-light'>
           <div className='accent-divider mx-auto mb-5' />
           <h2 className='text-primary text-3xl md:text-4xl font-black mb-3'>

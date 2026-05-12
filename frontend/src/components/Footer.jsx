@@ -75,7 +75,7 @@ function Footer() {
               <span className='material-symbols-outlined text-accent text-base mt-0.5'>call</span>
               <div>
                 <p className='text-white font-semibold'>Call Us</p>
-                <p>1300 APEX DECK</p>
+                <p>+63 426 426 469 TrueBuild</p>
                 <p className='text-xs'>Mon – Fri, 8am – 6pm</p>
               </div>
             </div>
@@ -83,7 +83,7 @@ function Footer() {
               <span className='material-symbols-outlined text-accent text-base mt-0.5'>mail</span>
               <div>
                 <p className='text-white font-semibold'>Email Us</p>
-                <p>hello@apexdeckdesign.com.au</p>
+                <p>info@truebuilddeck.com.au</p>
               </div>
             </div>
             <div className='flex items-start gap-3'>
