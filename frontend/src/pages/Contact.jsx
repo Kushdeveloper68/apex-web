@@ -88,9 +88,9 @@ function Contact() {
   return (
     <>
       {/* Hero */}
-      <section className='max-w-[1280px] mx-auto px-3 py-8'>
+      <section className='max-w-7xl mx-auto px-3 py-8'>
         <div
-          className='flex min-h-[380px] flex-col gap-5 bg-cover bg-center rounded-2xl items-start justify-end px-8 pb-12 md:px-12 overflow-hidden shadow-product'
+          className='flex min-h-95 flex-col gap-5 bg-cover bg-center rounded-2xl items-start justify-end px-8 pb-12 md:px-12 overflow-hidden shadow-product'
           style={{
             backgroundImage: `linear-gradient(to top, rgba(28,25,22,0.85) 25%, rgba(28,25,22,0.2) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuCbP4I3cxyCkPwyicJNv1e6FQVgFjfNrd1fB-iExSL3ckMYSUsOiwEdX5bT4qfl8kt4nxzhCzQrinvSSu53fRw0shT7xchTBiS3ZqNXK3AQOQjCx__Jpmj4IwHbVU4rJ_rmMMRMf2U0QWaawKpXEnW67nTr4Ot4RT9N7FcjzK-2rmJCsBJSl00aawexltWvvodUHtJmE5JtE3TYeiW8dZZDJJAVdr-0_HlV-UlmLLS4gD_-m0WVQgpEeGn1MOXJ-m6hIZwXAA5zEWE')`,
           }}
@@ -110,7 +110,7 @@ function Contact() {
       </section>
 
       {/* Main Content */}
-      <main className='max-w-[1280px] mx-auto px-3 py-10 pb-16'>
+      <main className='max-w-7-luto px-3 py-10 pb-16'>
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-10'>
 
           {/* Form */}

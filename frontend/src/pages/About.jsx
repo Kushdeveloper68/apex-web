@@ -53,16 +53,16 @@ function About() {
   return (
     <main>
       {/* Breadcrumb */}
-      <div className='max-w-[1280px] mx-auto px-6 py-4 flex items-center gap-2 text-sm'>
+      <div className='max-w-7xl mx-auto px-6 py-4 flex items-center gap-2 text-sm'>
         <Link to='/' className='text-text-muted hover:text-accent transition-colors font-medium'>Home</Link>
         <span className='text-border-light'>/</span>
         <span className='text-primary font-semibold'>About Us</span>
       </div>
 
       {/* Hero */}
-      <section className='max-w-[1280px] mx-auto px-3 pb-10'>
+      <section className='max-w-7xl mx-auto px-3 pb-10'>
         <div
-          className='relative flex min-h-[480px] flex-col gap-6 bg-cover bg-center rounded-2xl items-center justify-center p-8 text-center overflow-hidden shadow-product'
+          className='relative flex min-h-120 flex-col gap-6 bg-cover bg-center rounded-2xl items-center justify-center p-8 text-center overflow-hidden shadow-product'
           style={{
             backgroundImage: `linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDIdvz8FJvG-7qowF4prY57UGwVeIRH-4RJXjpYAsmXHoVeqsxEo7ywSAMPxqaPyBNne-t1IWWsFwKDqOKv-C2lLh3Vl0CnIPU6dbN7Cfr7FfwTE-hz9JlMhGZr8s_RT5T2GjJPzfAGYYof_RjCxhKlFvLVsXJYykgwr2bD27J8Usx0zmFheSYGfC9kgBunV__C-FS0VhCeaymP3YQhtUZ4kdA-lkG8IZ7-AQ1ZvygKbapOq1JYh5Uj9fXQ1lq7rhFfx9lpK87PSF8')`,
           }}
@@ -86,7 +86,7 @@ function About() {
       </section>
 
       {/* Our Story */}
-      <section className='max-w-[1280px] mx-auto px-3 py-20 flex flex-col md:flex-row gap-16 items-center'>
+      <section className='max-w-7xl mx-auto px-3 py-20 flex flex-col md:flex-row gap-16 items-center'>
         <div className='flex-1 space-y-6'>
           <div className='accent-divider' />
           <h3 className='text-accent text-sm font-bold uppercase tracking-widest'>Our Heritage</h3>
@@ -108,7 +108,7 @@ function About() {
           <div className='relative group'>
             <div className='absolute -top-4 -left-4 w-full h-full border-2 border-accent/30 rounded-2xl transition-all group-hover:top-0 group-hover:left-0 -z-10' />
             <div
-              className='w-full aspect-[4/5] bg-center bg-cover rounded-2xl shadow-product'
+              className='w-full aspect-4/5 bg-center bg-cover rounded-2xl shadow-product'
               style={{
                 backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuCaM6YDXE1Xfo5ulLPyaNiTMzUdP2UTvLQ-82SVpwEI7TtR-e85ksIb9jOTq_6KPCdpfEibv4ENkaWsyrfCDcdv3oF5_cVTQzBVa3w85TtwjfR75Z7MI2iA86wRd8QNipUnI39uUvRK2KQfUyCp8gfUB84-BKVQxj5UEICpEeOVDaMxtczxONKMxNTxuDyvHPlWtQcZnm1ri5oRg3EmaAtoYRGdBLxuL468goGjdRumPf7TQgWFCaHzXXUPaNTAmk1NDaQDxlqSDuA')`,
               }}
@@ -118,7 +118,7 @@ function About() {
       </section>
 
       {/* Stats Bar */}
-      <section className='max-w-[1280px] mx-auto px-3 pb-8'>
+      <section className='max-w-7xl mx-auto px-3 pb-8'>
         <div className='bg-primary rounded-2xl p-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-white'>
           {STATS.map((item, i) => (
             <div key={i} className='text-center'>
@@ -130,7 +130,7 @@ function About() {
       </section>
 
       {/* Products We Carry */}
-      <section className='max-w-[1280px] mx-auto px-3 py-20'>
+      <section className='max-w-7-luto px-3 py-20'>
         <div className='text-center mb-14'>
           <div className='accent-divider mx-auto mb-4' />
           <h2 className='text-4xl font-black text-primary mb-3'>Our Product Range</h2>
@@ -169,7 +169,7 @@ function About() {
 
       {/* Values */}
       <section className='bg-surface py-20'>
-        <div className='max-w-[1280px] mx-auto px-3'>
+        <div className='max-w-7xl mx-auto px-3'>
           <div className='text-center mb-14'>
             <div className='accent-divider mx-auto mb-4' />
             <h2 className='text-4xl font-black text-primary mb-3'>The Values We Build Upon</h2>
@@ -192,7 +192,7 @@ function About() {
       </section>
 
       {/* Trade / Capability Highlights */}
-      <section className='max-w-[1280px] mx-auto px-3 py-20'>
+      <section className='max-w-7xl mx-auto px-3 py-20'>
         <div className='text-center mb-14'>
           <div className='accent-divider mx-auto mb-4' />
           <h2 className='text-4xl font-black text-primary mb-3'>How We Work</h2>
@@ -211,7 +211,7 @@ function About() {
       </section>
 
       {/* CTA */}
-      <section className='max-w-[1280px] mx-auto px-3 pb-20'>
+      <section className='max-w-7xl mx-auto px-3 pb-20'>
         <div className='bg-primary rounded-2xl p-12 text-center relative overflow-hidden'>
           <div className='absolute top-0 right-0 w-64 h-64 bg-accent/10 rounded-full blur-3xl -mr-32 -mt-32' />
           <div className='absolute bottom-0 left-0 w-64 h-64 bg-black/20 rounded-full blur-3xl -ml-32 -mb-32' />

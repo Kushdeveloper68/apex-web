@@ -19,7 +19,7 @@ function Gallary() {
   return (
     <main>
       {/* Page Header */}
-      <section className='max-w-[1280px] mx-auto px-3 py-12'>
+      <section className='max-w-7xl mx-auto px-3 py-12'>
         <div className='flex flex-col gap-3 text-center mb-10'>
           <div className='accent-divider mx-auto' />
           <h1 className='text-primary text-5xl font-black leading-tight tracking-tight'>
@@ -64,7 +64,7 @@ function Gallary() {
                 fetchPriority="low"
                 className='w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105 block'
               />
-              <div className='absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6'>
+              <div className='absolute inset-0 bg-linear-to-t from-black/85 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6'>
                 <div className='flex items-center gap-2 mb-2'>
                   <span className={`px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest rounded ${TAG_COLORS[project.tag]}`}>
                     {project.tag}
@@ -92,7 +92,7 @@ function Gallary() {
       </section>
 
       {/* CTA Section */}
-      <section className='max-w-[1280px] mx-auto px-3 pb-16'>
+      <section className='max-w-7xl mx-auto px-3 pb-16'>
         <div className='bg-white rounded-2xl p-8 md:p-14 text-center border border-border-light'>
           <div className='accent-divider mx-auto mb-5' />
           <h2 className='text-primary text-3xl md:text-4xl font-black mb-3'>

@@ -69,7 +69,7 @@ function Home() {
           />
         </div>
 
-        <div className='relative z-10 max-w-[1280px] mx-auto px-3 w-full py-20'>
+        <div className='relative z-10 max-w-7xl mx-auto px-3 w-full py-20'>
           <div className='max-w-2xl'>
             <div className='inline-flex items-center gap-2 bg-accent/20 border border-accent/30 px-4 py-1.5 rounded-full text-accent text-xs font-bold uppercase tracking-widest mb-6'>
               <span className='w-1.5 h-1.5 bg-accent rounded-full animate-pulse' />
@@ -115,7 +115,7 @@ function Home() {
 
       {/* ─── PRODUCTS OVERVIEW ─── */}
       <section className='py-24 bg-white'>
-        <div className='max-w-[1280px] mx-auto px-3'>
+        <div className='max-w-7xl mx-auto px-3'>
           <div className='flex flex-col md:flex-row justify-between items-end mb-14 gap-6'>
             <div>
               <div className='accent-divider mb-4' />
@@ -141,12 +141,12 @@ function Home() {
                 to={`/detailservice/${service.id}`}
                 className={`group relative overflow-hidden rounded-2xl bg-surface border border-border-light hover:border-accent/30 hover:shadow-card-hover transition-all ${i === 0 ? 'sm:col-span-2 lg:col-span-1' : ''}`}
               >
-                <div className='relative aspect-[4/3] overflow-hidden'>
+                <div className='relative aspect-4/3 overflow-hidden'>
                   <div
                     className='absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105'
                     style={{ backgroundImage: `url('${service.image}')` }}
                   />
-                  <div className='absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent' />
+                  <div className='absolute inset-0 bg-linear-to-t from-black/70 via-black/10 to-transparent' />
                   <div className='absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-md'>
                     <span className='text-primary text-[10px] font-bold uppercase tracking-widest'>{service.title}</span>
                   </div>
@@ -178,10 +178,10 @@ function Home() {
 
       {/* ─── BRAND / ABOUT PREVIEW ─── */}
       <section className='py-24 bg-surface'>
-        <div className='max-w-[1280px] mx-auto px-3 grid md:grid-cols-2 gap-16 items-center'>
+        <div className='max-w-7xl mx-auto px-3 grid md:grid-cols-2 gap-16 items-center'>
           <div className='relative'>
             <div
-              className='aspect-[4/5] rounded-2xl overflow-hidden shadow-product'
+              className='aspect-4/5 rounded-2xl overflow-hidden shadow-product'
               style={{
                 backgroundImage:
                   "url('https://lh3.googleusercontent.com/aida-public/AB6AXuD_ya9rU1ywJloz72BwaP1ViLImHKABr4mqr3z1LI8VdpvgiDrxAyZGktlMclQ6MwtA9URxO5pzeUrrYObf11tQNB4ZvAZw6tv55HRQHp7jAEOj0s7_Wj56s1KHn2HTPWx72_IkojyCDgawyQgDaO4ycb5KIe_DIxPJ9mxX9aNm7KDH0sMd1aiS4PNOlH0LxyqAi9hbvaU-iMCmDeGNQU3QS5UkTHsJ9Mdj0lFBHrm5KxKVxDKfjxyPyQMFYIRtza3MmUrm6W8uvlA')",
@@ -189,7 +189,7 @@ function Home() {
                 backgroundPosition: 'center',
               }}
             />
-            <div className='absolute -bottom-6 -right-6 bg-primary p-7 rounded-2xl text-white hidden lg:block shadow-product max-w-[200px]'>
+            <div className='absolute -bottom-6 -right-6 bg-primary p-7 rounded-2xl text-white hidden lg:block shadow-product max-w-50'>
               <p className='text-4xl font-black mb-1'>5+</p>
               <p className='text-white/70 text-xs font-semibold uppercase tracking-widest leading-relaxed'>
                 Product Lines Trusted by Professionals
@@ -233,7 +233,7 @@ function Home() {
 
       {/* ─── WHY CHOOSE US ─── */}
       <section className='py-24 bg-white'>
-        <div className='max-w-[1280px] mx-auto px-3'>
+        <div className='max-w-7xl mx-auto px-3'>
           <div className='text-center mb-14'>
             <div className='accent-divider mx-auto mb-4' />
             <h2 className='text-primary text-sm font-bold uppercase tracking-[0.2em] mb-2'>Our Advantage</h2>
@@ -258,7 +258,7 @@ function Home() {
 
       {/* ─── GALLERY PREVIEW ─── */}
       <section className='py-24 bg-surface'>
-        <div className='max-w-[1280px] mx-auto px-3'>
+        <div className='max-w-7xl mx-auto px-3'>
           <div className='flex flex-col md:flex-row justify-between items-end mb-12 gap-6'>
             <div>
               <div className='accent-divider mb-4' />
@@ -302,7 +302,7 @@ function Home() {
 
       {/* ─── FINAL CTA ─── */}
       <section className='py-20 px-3'>
-        <div className='max-w-[1100px] mx-auto rounded-2xl bg-primary text-white p-12 md:p-16 text-center relative overflow-hidden shadow-product'>
+        <div className='max-w-275 mx-auto rounded-2xl bg-primary text-white p-12 md:p-16 text-center relative overflow-hidden shadow-product'>
           <div className='absolute top-0 right-0 -translate-y-1/3 translate-x-1/3 w-72 h-72 bg-accent/10 rounded-full blur-3xl' />
           <div className='relative z-10 space-y-5'>
             <div className='inline-flex items-center gap-2 bg-accent/20 border border-accent/30 px-4 py-1.5 rounded-full text-accent text-xs font-bold uppercase tracking-widest'>

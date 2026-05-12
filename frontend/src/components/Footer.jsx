@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className='bg-primary text-white'>
       {/* Main Footer */}
-      <div className='max-w-[1280px] mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12'>
+      <div className='max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12'>
         {/* Brand */}
         <div className='lg:col-span-1'>
           <div className='flex items-center gap-3 mb-5'>
@@ -99,8 +99,8 @@ function Footer() {
 
       {/* Bottom Bar */}
       <div className='border-t border-white/10'>
-        <div className='max-w-[1280px] mx-auto px-6 py-5 flex flex-col sm:flex-row justify-between items-center gap-3 text-white/40 text-xs'>
-          <p>© 2024 APEX Deck & Design. All rights reserved.</p>
+        <div className='max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row justify-between items-center gap-3 text-white/40 text-xs'>
+          <p>© 2024 TrueBuild Deck & Turf. All rights reserved.</p>
           <div className='flex gap-6'>
             <a href='#' className='hover:text-white transition-colors'>Privacy Policy</a>
             <a href='#' className='hover:text-white transition-colors'>Terms of Service</a>

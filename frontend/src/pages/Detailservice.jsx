@@ -122,7 +122,7 @@ function Detailservice() {
 
       {/* Quick Feature Highlights (above fold summary) */}
       <section className='bg-primary'>
-        <div className='max-w-[1280px] mx-auto px-3 py-6 grid grid-cols-2 sm:grid-cols-4 gap-4'>
+        <div className='max-w-7xl mx-auto px-3 py-6 grid grid-cols-2 sm:grid-cols-4 gap-4'>
           {product.features.slice(0, 4).map((f, i) => (
             <div key={i} className='flex items-center gap-3 p-3'>
               <div className='w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center shrink-0'>
@@ -140,7 +140,7 @@ function Detailservice() {
       {/* Related Products */}
       {relatedProducts.length > 0 && (
         <section className='py-16 bg-white'>
-          <div className='max-w-[1280px] mx-auto px-3'>
+          <div className='max-w-7xl mx-auto px-3'>
             <div className='accent-divider mb-4' />
             <div className='flex items-end justify-between mb-10'>
               <div>
@@ -158,12 +158,12 @@ function Detailservice() {
                   to={`/detailservice/${rp.id}`}
                   className='group block rounded-2xl overflow-hidden border border-border-light hover:border-accent/30 hover:shadow-card-hover transition-all bg-white'
                 >
-                  <div className='relative aspect-[16/9] overflow-hidden bg-surface'>
+                  <div className='relative aspect-video overflow-hidden bg-surface'>
                     <div
                       className='absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105'
                       style={{ backgroundImage: `url('${PRODUCT_IMAGES[rp.id]}')` }}
                     />
-                    <div className='absolute inset-0 bg-gradient-to-t from-black/50 to-transparent' />
+                    <div className='absolute inset-0 bg-linear-to-t from-black/50 to-transparent' />
                     <div className='absolute top-3 left-3'>
                       <span className='px-2 py-0.5 bg-white/90 text-primary text-[10px] font-bold uppercase tracking-widest rounded'>
                         {rp.category}
@@ -186,7 +186,7 @@ function Detailservice() {
 
       {/* CTA Section */}
       <section className='py-20 px-3 bg-surface'>
-        <div className='max-w-[1100px] mx-auto bg-primary rounded-2xl p-10 md:p-14 text-center relative overflow-hidden shadow-product'>
+        <div className='max-w-275 mx-auto bg-primary rounded-2xl p-10 md:p-14 text-center relative overflow-hidden shadow-product'>
           <div className='absolute -top-16 -right-16 w-48 h-48 bg-accent/10 rounded-full blur-3xl' />
           <div className='absolute -bottom-16 -left-16 w-48 h-48 bg-black/20 rounded-full blur-3xl' />
           <div className='relative z-10'>

@@ -33,9 +33,9 @@ function Services() {
     <>
       {/* Hero */}
       <section className='relative'>
-        <div className='max-w-[1280px] mx-auto px-3 py-8'>
+        <div className='max-w-7xl mx-auto px-3 py-8'>
           <div
-            className='flex min-h-[420px] flex-col gap-6 bg-cover bg-center rounded-2xl items-start justify-end px-10 pb-14 shadow-product overflow-hidden'
+            className='flex min-h-105 flex-col gap-6 bg-cover bg-center rounded-2xl items-start justify-end px-10 pb-14 shadow-product overflow-hidden'
             style={{
               backgroundImage: `linear-gradient(to top, rgba(28,25,22,0.85) 30%, rgba(28,25,22,0.2) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDcw0QrWwZiRJLUcIYjPGgZ7kRVInVE9CkZaZQlPS2htbL3XLh72adFppzjGAxQqbQa4QUYY5rSTw63SwQL1H882GXcNY3gyfuWWSBDDTfWxT3s0kzKPoh0gmixfcjBM_lXmbG120udP2Ysj5Kakumb3bOWDvF5pRLxv6jOcSUcPoj0R9Y3LWE2CjX1PwOUJj2VV76KKA0Sn5G8axKxE1dM8TV927fBemGYxW7dYjc3JUH9f9mrfZNlIMO4OcbHYiBH7eIv0J_gr6I')`,
             }}
@@ -56,8 +56,8 @@ function Services() {
       </section>
 
       {/* Filter Bar */}
-      <div className='sticky top-[65px] z-30 bg-white/95 backdrop-blur-md border-b border-border-light'>
-        <div className='max-w-[1280px] mx-auto px-3 py-3 flex items-center gap-3 overflow-x-auto'>
+      <div className='sticky top-16.25 z-30 bg-white/95 backdrop-blur-md border-b border-border-light'>
+        <div className='max-w-7xl mx-auto px-3 py-3 flex items-center gap-3 overflow-x-auto'>
           {CATEGORIES.map(cat => (
             <button
               key={cat}
@@ -78,14 +78,14 @@ function Services() {
       </div>
 
       {/* Products Grid */}
-      <main className='max-w-[1280px] mx-auto px-3 py-16'>
+      <main className='max-w-7xl mx-auto px-3 py-16'>
         <div className='flex flex-col gap-20'>
           {filtered.map((product, index) => (
             <div key={product.id} className='flex flex-col lg:flex-row items-center gap-12 lg:gap-16'>
               {/* Image */}
               <div className={`flex-1 w-full ${index % 2 === 0 ? 'order-1' : 'order-1 lg:order-2'}`}>
                 <div
-                  className='aspect-[16/10] bg-center bg-cover rounded-2xl shadow-product overflow-hidden group relative'
+                  className='aspect-16/10 bg-center bg-cover rounded-2xl shadow-product overflow-hidden group relative'
                   style={{ backgroundImage: `url('${PRODUCT_IMAGES[product.id]}')` }}
                 >
                   <div className='absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-500' />
@@ -174,7 +174,7 @@ function Services() {
 
       {/* CTA Section */}
       <section className='bg-primary py-20'>
-        <div className='max-w-[1280px] mx-auto px-3 text-center flex flex-col items-center gap-7'>
+        <div className='max-w-7xl mx-auto px-3 text-center flex flex-col items-center gap-7'>
           <div className='accent-divider mx-auto' />
           <h2 className='text-white text-4xl font-black leading-tight'>
             Ready to transform your space?
