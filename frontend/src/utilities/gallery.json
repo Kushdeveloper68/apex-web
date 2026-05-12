@@ -1,105 +1,207 @@
 [
 	{
-		"id": 1,
-		"category": "PVC Marble Sheet",
-		"tag": "Indoor",
-		"title": "Calacatta White Bathroom Feature Wall",
-		"desc": "Full-height PVC marble sheet installation in a master ensuite — seamless, waterproof and stunning.",
-		"image": "/gallery-image/PVC-MARBLE-AW23-001.png",
-		"productId": "pvc-marble-sheet",
-		"featured": true
-	},
-	{
-		"id": 2,
-		"category": "WPC Outdoor Panel",
-		"tag": "Outdoor",
-		"title": "Modern Residential Facade — Ash Grey",
-		"desc": "Co-extruded WPC outdoor cladding wrapping a contemporary home exterior — fade-free and maintenance-free.",
-		"image": "/gallery-image/WPC-OUTDOOR-AWO-H1.png",
-		"productId": "wpc-outdoor-panel",
-		"featured": true
-	},
-	{
-		"id": 3,
-		"category": "WPC Wall Panel",
-		"tag": "Indoor",
-		"title": "Dark Walnut Living Room Feature Wall",
-		"desc": "WPC wall panels in dark walnut finish — notch-joint installation with zero visible fixings.",
-		"image": "/gallery-image/WPC-WALL-AW-009.png",
-		"productId": "wpc-wall-panel",
-		"featured": true
-	},
-	{
-		"id": 4,
+		"id": 12,
 		"category": "MDF Acoustic Panel",
 		"tag": "Acoustic",
-		"title": "Home Theatre Acoustic Wall — Natural Oak",
-		"desc": "MDF slatted acoustic panels deliver professional noise control without compromising the interior aesthetic.",
-		"image": "/gallery-image/MDF-PANEL.jpg",
+		"title": "MDF Acoustic Panel — Warm Walnut",
+		"desc": "Vertical slatted MDF acoustic panel in warm walnut finish — ideal for living rooms and media walls.",
+		"image": "/gallery-image/MDF-Acoustic-Panel-1.avif",
 		"productId": "acoustic-panel",
 		"featured": true
 	},
 	{
-		"id": 5,
+		"id": 13,
+		"category": "MDF Acoustic Panel",
+		"tag": "Acoustic",
+		"title": "MDF Acoustic Panel — Modern Slat",
+		"desc": "Contemporary MDF slat panel used as a textured backdrop with integrated shelf lighting.",
+		"image": "/gallery-image/MDF-Acoustic-Panel-2.webp",
+		"productId": "acoustic-panel"
+	},
+	{
+		"id": 14,
+		"category": "MDF Acoustic Panel",
+		"tag": "Acoustic",
+		"title": "MDF Acoustic Panel — Dark Grain",
+		"desc": "Deep-toned MDF acoustic wall panels that add depth and acoustic control to bedrooms.",
+		"image": "/gallery-image/MDF-Acoustic-Panel-3.avif",
+		"productId": "acoustic-panel"
+	},
+	{
+		"id": 15,
+		"category": "MDF Acoustic Panel",
+		"tag": "Acoustic",
+		"title": "MDF Acoustic Panel — Bathroom Feature",
+		"desc": "Moisture-resistant MDF slatted panel used to accent a bathroom vanity wall.",
+		"image": "/gallery-image/MDF-Acoustic-Panel-4.jpg",
+		"productId": "acoustic-panel"
+	},
+	{
+		"id": 16,
 		"category": "PS Panel",
 		"tag": "Indoor",
-		"title": "Linear Groove PS Panel — Office Interior",
-		"desc": "PS architectural panels in a stepped groove profile create a striking commercial office feature wall.",
-		"image": "/gallery-image/PS-WALL-APS-024.png",
+		"title": "PS Decorative Panel — Textured Grid",
+		"desc": "PS architectural panel in a grid pattern — lightweight and easy to install for feature walls.",
+		"image": "/gallery-image/ps-panel-1.webp",
+		"productId": "ps-panel",
+		"featured": true
+	},
+	{
+		"id": 17,
+		"category": "PS Panel",
+		"tag": "Indoor",
+		"title": "PS Panel — Linear Groove",
+		"desc": "Linear groove PS panel used to create a refined commercial interior feature wall.",
+		"image": "/gallery-image/ps-panel-2.webp",
 		"productId": "ps-panel"
 	},
 	{
-		"id": 6,
-		"category": "WPC Outdoor Panel",
-		"tag": "Outdoor",
-		"title": "Garden Pergola Side Panel — Teak + Black",
-		"desc": "Two-tone WPC outdoor panels used as pergola infill — weather-resistant and visually bold.",
-		"image": "/gallery-image/WPC-OUTDOOR-AWO-H5.png",
-		"productId": "wpc-outdoor-panel"
+		"id": 18,
+		"category": "PS Panel",
+		"tag": "Indoor",
+		"title": "PS Panel — Warm Oak",
+		"desc": "Warm oak-finished PS panel offering an affordable textured wall solution for offices.",
+		"image": "/gallery-image/ps-panel-3.jpg",
+		"productId": "ps-panel"
 	},
 	{
-		"id": 7,
+		"id": 19,
+		"category": "PS Panel",
+		"tag": "Indoor",
+		"title": "PS Panel — Feature Strips",
+		"desc": "Stepped PS panel strips used to frame media walls and cabinetry.",
+		"image": "/gallery-image/ps-panel-4.jpg",
+		"productId": "ps-panel"
+	},
+	{
+		"id": 20,
+		"category": "PS Panel",
+		"tag": "Indoor",
+		"title": "PS Panel — Decorative Accent",
+		"desc": "Textured PS panel with subtle grooves for an elegant reception area backdrop.",
+		"image": "/gallery-image/ps-panel-5.jpg",
+		"productId": "ps-panel"
+	},
+	{
+		"id": 21,
 		"category": "PVC Marble Sheet",
 		"tag": "Indoor",
-		"title": "Gold Veined Marble Kitchen Splashback",
-		"desc": "PVC marble panels used as a kitchen splashback — fully waterproof and stunning alternative to real stone.",
-		"image": "/gallery-image/PVC-MARBLE-AW23-015.jpg",
+		"title": "PVC Marble — White Vein",
+		"desc": "High-gloss PVC marble sheet with delicate veining used as a polished living room focal wall.",
+		"image": "/gallery-image/pvc-1.webp",
+		"productId": "pvc-marble-sheet",
+		"featured": true
+	},
+	{
+		"id": 22,
+		"category": "PVC Marble Sheet",
+		"tag": "Indoor",
+		"title": "PVC Marble — Subtle Grey",
+		"desc": "Soft grey marble-effect PVC panels providing a low-maintenance alternative to real stone.",
+		"image": "/gallery-image/pvc-2.webp",
 		"productId": "pvc-marble-sheet"
 	},
 	{
-		"id": 8,
+		"id": 23,
+		"category": "PVC Marble Sheet",
+		"tag": "Indoor",
+		"title": "PVC Marble — Classic Calacatta",
+		"desc": "Calacatta-style PVC marble sheet used as a TV feature wall for a luxurious finish.",
+		"image": "/gallery-image/pvc-3.avif",
+		"productId": "pvc-marble-sheet"
+	},
+	{
+		"id": 24,
+		"category": "PVC Marble Sheet",
+		"tag": "Indoor",
+		"title": "PVC Marble — Warm Gold Vein",
+		"desc": "Gold-veined PVC marble panel installed behind a sofa to elevate the living area.",
+		"image": "/gallery-image/pvc-4.avif",
+		"productId": "pvc-marble-sheet"
+	},
+	{
+		"id": 25,
+		"category": "PVC Marble Sheet",
+		"tag": "Indoor",
+		"title": "PVC Marble — Polished Slab",
+		"desc": "Large-format polished marble-look PVC used across floor-to-ceiling feature walls.",
+		"image": "/gallery-image/pvc-5.webp",
+		"productId": "pvc-marble-sheet"
+	},
+	{
+		"id": 26,
+		"category": "WPC Outdoor Panel",
+		"tag": "Outdoor",
+		"title": "WPC Outdoor Cladding — Terracotta",
+		"desc": "Durable WPC outdoor panels used as ventilated facade cladding with a terracotta tone.",
+		"image": "/gallery-image/wpc-outdoor-panel-1.webp",
+		"productId": "wpc-outdoor-panel",
+		"featured": true
+	},
+	{
+		"id": 27,
+		"category": "WPC Outdoor Panel",
+		"tag": "Outdoor",
+		"title": "WPC Outdoor Facade — Dark Wood",
+		"desc": "Co-extruded WPC panels on a modern home exterior — low maintenance and weather-resistant.",
+		"image": "/gallery-image/wpc-outdoor-panel-2.jpg",
+		"productId": "wpc-outdoor-panel"
+	},
+	{
+		"id": 28,
+		"category": "WPC Outdoor Panel",
+		"tag": "Outdoor",
+		"title": "WPC Outdoor Cladding — Vertical Slats",
+		"desc": "Vertical slatted WPC panels used as a bold exterior privacy screen and design feature.",
+		"image": "/gallery-image/wpc-outdoor-panel-3.avif",
+		"productId": "wpc-outdoor-panel"
+	},
+	{
+		"id": 29,
+		"category": "WPC Outdoor Panel",
+		"tag": "Outdoor",
+		"title": "WPC Outdoor — Deep Chocolate",
+		"desc": "Rich chocolate-toned WPC panels applied to an outdoor pergola and entry wall.",
+		"image": "/gallery-image/wpc-outdoor-panel-4.webp",
+		"productId": "wpc-outdoor-panel"
+	},
+	{
+		"id": 30,
 		"category": "WPC Wall Panel",
 		"tag": "Indoor",
-		"title": "Ash White Bedroom Headboard Wall",
-		"desc": "Elegant ash white WPC wall panels create a textured, warm focal point behind the bed.",
-		"image": "/gallery-image/WPC-WALL-AW-333.png",
+		"title": "WPC Wall Panel — Dark Walnut Slat",
+		"desc": "Notched WPC wall panel in dark walnut used as a dramatic media wall with integrated lighting.",
+		"image": "/gallery-image/wpc-wall-panel-1.webp",
+		"productId": "wpc-wall-panel",
+		"featured": true
+	},
+	{
+		"id": 31,
+		"category": "WPC Wall Panel",
+		"tag": "Indoor",
+		"title": "WPC Wall Panel — Ash White Texture",
+		"desc": "Light ash-toned WPC panels used to brighten bedroom headboard walls with tactile grain.",
+		"image": "/gallery-image/wpc-wall-panel-2.webp",
 		"productId": "wpc-wall-panel"
 	},
 	{
-		"id": 9,
-		"category": "MDF Acoustic Panel",
-		"tag": "Acoustic",
-		"title": "Restaurant Acoustic Ceiling — Walnut Wave",
-		"desc": "Premium walnut wave acoustic panels installed across a busy restaurant ceiling — dramatic and functional.",
-		"image": "/gallery-image/MDF-PANEL-4.jpg",
-		"productId": "acoustic-panel"
+		"id": 32,
+		"category": "WPC Wall Panel",
+		"tag": "Indoor",
+		"title": "WPC Wall Panel — Contemporary Slats",
+		"desc": "Contemporary WPC slatted wall creating a linear look for lounge spaces.",
+		"image": "/gallery-image/wpc-wall-panel-3.avif",
+		"productId": "wpc-wall-panel"
 	},
 	{
-		"id": 10,
-		"category": "MDF Acoustic Panel",
-		"tag": "Acoustic",
-		"title": "Restaurant Acoustic Ceiling — Walnut Wave",
-		"desc": "Premium walnut wave acoustic panels installed across a busy restaurant ceiling — dramatic and functional.",
-		"image": "/gallery-image/MDF-PANEL-4.jpg",
-		"productId": "acoustic-panel"
-	},
-	{
-		"id": 11,
-		"category": "MDF Acoustic Panel",
-		"tag": "Acoustic",
-		"title": "Restaurant Acoustic Ceiling — Walnut Wave",
-		"desc": "Premium walnut wave acoustic panels installed across a busy restaurant ceiling — dramatic and functional.",
-		"image": "/gallery-image/MDF-PANEL-4.jpg",
-		"productId": "acoustic-panel"
+		"id": 33,
+		"category": "WPC Wall Panel",
+		"tag": "Indoor",
+		"title": "WPC Wall Panel — Deep Grain",
+		"desc": "Deep grain WPC wall panels that add warmth and texture behind seating areas.",
+		"image": "/gallery-image/wpc-wall-panel-4.avif",
+		"productId": "wpc-wall-panel",
+		"featured": true
 	}
 ]
+

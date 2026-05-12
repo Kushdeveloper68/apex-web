@@ -52,7 +52,7 @@ const WHY_US = [
   { icon: 'support_agent', title: 'Expert Support', desc: 'Our team provides technical guidance from product selection through to installation.' },
 ]
 
-const FEATURED_GALLERY = galleryProjects.filter(project => project.featured).slice(0, 4)
+const FEATURED_GALLERY = galleryProjects.filter(project => project.featured).slice(0, 6)
 
 function Home() {
   return (
