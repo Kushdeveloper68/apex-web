@@ -7,7 +7,6 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-src/assets/pdfs/TrueBuild-brochure.pdf
 
 node_modules
 dist
